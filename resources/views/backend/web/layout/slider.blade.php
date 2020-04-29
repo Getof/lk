@@ -17,7 +17,7 @@
                     <tr>
                         <td class="text-primary">{{$slider->title}}</td>
                         <td>{{$slider->body}}</td>
-                        <td class="text-right">
+                        <td class="text-left">
                             <form onsubmit="if (confirm('Удалить?')){return true}else{return false} " action="{{route('admin.slides.destroy', $slider->id)}}" method="post">
                                 @method('DELETE')
                                 @csrf
@@ -26,7 +26,6 @@
                                 </a>
                                 <button type="submit" class="btn"><i class="fa fa-trash"></i></button>
                             </form>
-
                         </td>
                     </tr>
                 @empty

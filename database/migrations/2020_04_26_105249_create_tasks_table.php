@@ -17,8 +17,7 @@ class CreateTasksTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('body');
-            $table->integer('img_id')->unsigned();
-            $table->foreign('img_id')->references('id')->on('images');
+            $table->string('img');
             $table->timestamps();
         });
     }

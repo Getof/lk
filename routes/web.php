@@ -14,9 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.web.index');
-});
+Route::get('/', 'Front\HomeController@index');
+
 
 Route::group(['prefix'=>'admin', 'namespace'=>'Admin'], function (){
     Route::get('/', 'DashboardController@dashboard')->name('admin.index');

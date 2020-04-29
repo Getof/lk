@@ -18,7 +18,7 @@
                 <tr>
                     <td class="text-primary">{{$task->title}}</td>
                     <td>{{$task->body}}</td>
-                    <td></td>
+                    <td><img src="{{asset('upload/imgtasks/'.$task->img)}}" alt="" width="20%"></td>
                     <td class="text-right">
                         <form onsubmit="if (confirm('Удалить?')){return true}else{return false} " action="{{route('admin.tasks.destroy', $task->id)}}" method="post">
                             @method('DELETE')

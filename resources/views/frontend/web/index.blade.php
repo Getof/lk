@@ -104,19 +104,13 @@
     <div class="container">
         <div class="main-slider">
             <div class="slider">
-                <div class="slide">
-                    <h4 class="slide-header">Удобное хранение материалов</h4>
-                    <span class="slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa aperiam, nulla harum impedit aliquid eum placeat reiciendis maiores ut, deleniti facere cupiditate unde magnam blanditiis quod expedita quisquam eveniet quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                </div>
-                <div class="slide">
-                    <h4 class="slide-header">Удобное хранение материалов</h4>
-                    <span class="slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa aperiam, nulla harum impedit aliquid eum placeat reiciendis maiores ut, deleniti facere cupiditate unde magnam blanditiis quod expedita quisquam eveniet quidem.</span>
-                </div>
-                <div class="slide">
-                    <h4 class="slide-header">Lorem ipsum</h4>
-                    <span class="slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa aperiam, nulla harum impedit aliquid eum placeat reiciendis maiores ut, deleniti facere cupiditate unde magnam blanditiis quod expedita quisquam eveniet quidem.
-				</span>
-                </div>
+                @forelse($slides as $slide)
+                    <div class="slide">
+                        <h4 class="slide-header">{{$slide->title}}</h4>
+                        <span class="slide-text">{{$slide->body}}</span>
+                    </div>
+                @empty
+                @endforelse
             </div>
             <div class="main-slider__details">
                 <a href="#">Читать полностью</a>
@@ -128,39 +122,20 @@
         <div class="main-blog">
             <h2 class="main-blog__header">Блог</h2>
             <div class="main-blog__blocks d-flex flex-jc-sb">
-                <div class="block-container">
-                    <img class="block-container__img" src="{{ asset('front/img/blog.svg') }}" alt="blog">
-                    <div class="block-container__text-container">
-                        <h5 class="block-container__header">Lorem ipsum</h5>
-                        <span class="block-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur optio tempora repudiandae earum est ratione, sapiente cupiditate neque voluptas labore ut, quam soluta at harum assumenda. Quas, tenetur quisquam voluptas.</span>
-                        <div class="block-container__after d-flex flex-jc-sb">
-                            <a href="#" class="block-container__after-details">Подробнее</a>
-                            <span class="block-container__after-date">12.03.2020</span>
+                @forelse($tasks as $task)
+                    <div class="block-container">
+                        <img class="block-container__img" src="{{asset('upload/imgtasks/'.$task->img)}}" alt="blog">
+                        <div class="block-container__text-container">
+                            <h5 class="block-container__header">{{$task->title}}</h5>
+                            <span class="block-container__text">{{$task->body}}</span>
+                            <div class="block-container__after d-flex flex-jc-sb">
+                                <a href="#" class="block-container__after-details">Подробнее</a>
+                                <span class="block-container__after-date">12.03.2020</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="block-container">
-                    <img class="block-container__img" src="{{ asset('front/img/blog.svg') }}" alt="blog">
-                    <div class="block-container__text-container">
-                        <h5 class="block-container__header">Lorem ipsum</h5>
-                        <span class="block-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta maiores, fuga ad doloribus maxime saepe impedit sequi praesentium, doloremque amet sit architecto ipsa consequatur magnam quo et iusto. Rem, itaque.</span>
-                        <div class="block-container__after d-flex flex-jc-sb">
-                            <a href="#" class="block-container__after-details">Подробнее</a>
-                            <span class="block-container__after-date">12.03.2020</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="block-container">
-                    <img class="block-container__img" src="{{ asset('front/img/blog.svg') }}" alt="blog">
-                    <div class="block-container__text-container">
-                        <h5 class="block-container__header">Lorem ipsum</h5>
-                        <span class="block-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta maiores, fuga ad doloribus maxime saepe impedit sequi praesentium, doloremque amet sit architecto ipsa consequatur magnam quo et iusto. Rem, itaque.</span>
-                        <div class="block-container__after d-flex flex-jc-sb">
-                            <a href="#" class="block-container__after-details">Подробнее</a>
-                            <span class="block-container__after-date">12.03.2020</span>
-                        </div>
-                    </div>
-                </div>
+                @empty
+                @endforelse
             </div>
             <div class="main-blog__bth-container d-flex">
                 <div class="main-blog__btn d-flex">

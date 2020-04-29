@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Tasks;
 use Illuminate\Http\Request;
+use Intervention\Image\Image;
 
 class TasksController extends Controller
 {
@@ -27,7 +28,9 @@ class TasksController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.web.layout.tscreate', [
+            'task' => []
+        ]);
     }
 
     /**
@@ -38,7 +41,21 @@ class TasksController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $path = public_path().'/upload/imgtasks/';
+        $file = $request->file('img');
+        $filename = time().'.'.$file->getClientOriginalExtension();
+        $file->move($path,$filename);
+
+
+        Tasks::create([
+            'title'=>$request->get('title'),
+            'body'=>$request->get('body'),
+            'img'=>$filename
+        ]);
+
+        return redirect()->route('admin.tasks.index');
+
+
     }
 
     /**
@@ -58,9 +75,11 @@ class TasksController extends Controller
      * @param  \App\Tasks  $tasks
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tasks $tasks)
+    public function edit(int $id)
     {
-        //
+        $task=Tasks::find($id);
+
+        return view('backend.web.layout.tsedit', ['task'=> $task]);
     }
 
     /**
@@ -70,9 +89,26 @@ class TasksController extends Controller
      * @param  \App\Tasks  $tasks
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tasks $tasks)
+    public function update(Request $request, int $id)
     {
-        //
+        $ts=Tasks::find($id);
+
+        $path = public_path().'/upload/imgtasks/';
+        $file = $request->file('img');
+
+        if ((($ts->img) != $file) && ($file != null)){
+            $filename = time().'.'.$file->getClientOriginalExtension();
+            $file->move($path,$filename);
+        } else {
+            $filename = $ts->img;
+        }
+        $ts->update([
+            'title'=>$request->get('title'),
+            'body'=>$request->get('body'),
+            'img'=>$filename
+        ]);
+
+        return redirect()->route('admin.tasks.index');
     }
 
     /**
@@ -81,8 +117,11 @@ class TasksController extends Controller
      * @param  \App\Tasks  $tasks
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tasks $tasks)
+    public function destroy(int $id)
     {
-        //
+        $ts=Tasks::find($id);
+        $ts->delete();
+
+        return redirect()->route('admin.tasks.index');
     }
 }
