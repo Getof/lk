@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.web.index');
+});
+
+Route::group(['prefix'=>'admin', 'namespace'=>'Admin'], function (){
+    Route::get('/', 'DashboardController@dashboard')->name('admin.index');
+    Route::resource('/slides', 'SlidesController', ['as'=>'admin']);
+    Route::resource('/tasks', 'TasksController', ['as'=>'admin']);
+
+
 });
