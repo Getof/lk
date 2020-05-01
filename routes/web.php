@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'Front\HomeController@index');
+Route::get('/blog', 'Front\BlogController@index');
 
 
 Route::group(['prefix'=>'admin', 'namespace'=>'Admin'], function (){
