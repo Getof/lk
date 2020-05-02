@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'Front\HomeController@index');
 Route::get('/blog', 'Front\BlogController@index');
+Route::get('/contacts', 'Front\MailController@index')->name('contacts.index');
+Route::post('/send', 'Front\MailController@store')->name('contacts.store');
 
 
 Route::group(['prefix'=>'admin', 'namespace'=>'Admin'], function (){

@@ -6,7 +6,7 @@
     <title>Блог</title>
     <link href="{{ asset('front/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('front/css/jquery.bxslider.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('front/css/blog.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('front/css/reviews.css') }}">
 </head>
 <body>
 <div class="modal fade" id="registerStartModal" tabindex="-1" role="dialog" aria-labelledby="registerStartModalLabel" aria-hidden="true">
@@ -99,57 +99,26 @@
 </header>
 <main class="main">
     <div class="container">
-        <div class="main-blog">
-            <h2 class="main-blog__header">Блог</h2>
-            <div class="main-blog__blocks d-flex flex-jc-sb">
-                <div class="big-blocks slider d-flex flex-jc-sb">
-                    @foreach($taskmain as $tm)
-                    <div class="big-blog-container"
-                         style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url({{asset('upload/imgtasks/'.$tm->img)}}) no-repeat">
-                        <div class="big-blog-text">
-                            <h4 class="big-blog-text__header">{{$tm->title}}</h4>
-                            <hr class="big-blog-text__line">
-                            <div class="big-blog-text__after d-flex flex-jc-sb">
-                                <a href="#" class="big-blog-text__after-details">Подробнее</a>
-                                <span class="big-blog-text__after-date">{{$tm->created_at->format('d.m.Y')}}</span>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-{{--                    <div class="big-blog-container" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(http://macfort-test.ru/front/img/blog.svg) no-repeat">--}}
-{{--                        <div class="big-blog-text">--}}
-{{--                            <h4 class="big-blog-text__header">Lorem ipsum header</h4>--}}
-{{--                            <hr class="big-blog-text__line">--}}
-{{--                            <div class="big-blog-text__after d-flex flex-jc-sb">--}}
-{{--                                <a href="#" class="big-blog-text__after-details">Подробнее</a>--}}
-{{--                                <span class="big-blog-text__after-date">12.03.2020</span>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-                </div>
-                @foreach($tasks as $ts)
-                <div class="block-container">
-                    <img class="block-container__img" src="{{asset('upload/imgtasks/'.$ts->img)}}" alt="blog">
-                    <div class="block-container__text-container">
-                        <h5 class="block-container__header">{{$ts->title}}</h5>
-                        <span class="block-container__text">{{$ts->body}}</span>
-                        <div class="block-container__after d-flex flex-jc-sb">
-                            <a href="#" class="block-container__after-details">Подробнее</a>
-                            <span class="block-container__after-date">{{$ts->created_at->format('d.m.Y')}}</span>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
+        <div class="main-reviews">
+            <h2 class="main-reviews__header">Отзывы</h2>
+            @include('frontend.web.partial.rew')
 
+            <div class="review-details">
+                <a href="#">Читать полностью</a>
             </div>
-{{--            <div class="main-blog__bth-container d-flex">--}}
-{{--                <div class="main-blog__btn d-flex">--}}
-{{--                    <a href="#" class="main-blog__btn-link">Все статьи</a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            <div class="review-btn d-flex">
+                <div class="review-btn__more-reviews">
+                    <a href="#" class="review-btn__more-reviews__href">Показать еще</a>
+                </div>
+                <div class="review-btn__make-review">
+
+                    <a href="#" class="review-btn__make-review__href" data-toggle="modal" data-target="#reviewModal">Оставить отзыв</a>
+                </div>
+            </div>
         </div>
     </div>
 </main>
+
 <footer class="footer">
     <div class="container">
         <div class="footer-links">
@@ -214,5 +183,6 @@
         });
     }
 </script>
+
 </body>
 </html>

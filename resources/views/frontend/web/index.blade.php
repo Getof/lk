@@ -150,7 +150,7 @@
         <div class="footer-links">
             <ul class="d-flex footer-links__list flex-jc-sb">
                 <li class="footer-links__list-item">
-                    <a href="/">Контакты</a>
+                    <a href="/contacts">Контакты</a>
                 </li>
                 <li class="footer-links__list-item">
                     <a href="/">Отзывы</a>

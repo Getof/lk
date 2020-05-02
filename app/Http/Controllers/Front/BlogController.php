@@ -15,10 +15,14 @@ class BlogController extends Controller
      */
     public function index()
     {
-//        dd(Tasks::orderBy('created_at', 'desc')->skip(2)->paginate(10));
+        $tm = Tasks::orderBy('created_at', 'desc')->take(2)->get();
+        $ts = Tasks::orderBy('created_at', 'desc')->paginate(10);
+        $ts2 = $ts->slice(2);
+        $ts2->all();
+//        dd($ts2);
         return view('frontend.web.blog', [
-           'taskmain'=>Tasks::orderBy('created_at', 'desc')->take(2)->get(),
-            'tasks'=>Tasks::orderBy('created_at', 'desc')->offset(2)->paginate(10)
+           'taskmain'=>$tm,
+            'tasks'=>$ts2
         ]);
     }
 

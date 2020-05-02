@@ -17,8 +17,8 @@ class HomeController extends Controller
     public function index()
     {
         return view('frontend.web.index', [
-            'slides'=>Slides::all(),
-            'tasks'=>Tasks::all()
+            'slides'=>Slides::orderBy('created_at', 'desc')->get(),
+            'tasks'=>Tasks::orderBy('created_at', 'desc')->get()
         ]);
     }
 

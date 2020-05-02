@@ -6,7 +6,7 @@
     <title>Блог</title>
     <link href="{{ asset('front/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('front/css/jquery.bxslider.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('front/css/blog.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('front/css/contacts.css') }}">
 </head>
 <body>
 <div class="modal fade" id="registerStartModal" tabindex="-1" role="dialog" aria-labelledby="registerStartModalLabel" aria-hidden="true">
@@ -99,57 +99,65 @@
 </header>
 <main class="main">
     <div class="container">
-        <div class="main-blog">
-            <h2 class="main-blog__header">Блог</h2>
-            <div class="main-blog__blocks d-flex flex-jc-sb">
-                <div class="big-blocks slider d-flex flex-jc-sb">
-                    @foreach($taskmain as $tm)
-                    <div class="big-blog-container"
-                         style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url({{asset('upload/imgtasks/'.$tm->img)}}) no-repeat">
-                        <div class="big-blog-text">
-                            <h4 class="big-blog-text__header">{{$tm->title}}</h4>
-                            <hr class="big-blog-text__line">
-                            <div class="big-blog-text__after d-flex flex-jc-sb">
-                                <a href="#" class="big-blog-text__after-details">Подробнее</a>
-                                <span class="big-blog-text__after-date">{{$tm->created_at->format('d.m.Y')}}</span>
-                            </div>
-                        </div>
+        <div class="main-contacts">
+            <h2 class="main-contacts__header">Контакты</h2>
+            <div class="main-contacts__blocks d-flex flex-jc-sb">
+                <div class="contacts-service__block d-flex ">
+                    <div class="contacts-service__block-image">
+                        <img src="{{ asset('front/img/contacts/tel.svg') }}" alt="tel">
                     </div>
-                    @endforeach
-{{--                    <div class="big-blog-container" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(http://macfort-test.ru/front/img/blog.svg) no-repeat">--}}
-{{--                        <div class="big-blog-text">--}}
-{{--                            <h4 class="big-blog-text__header">Lorem ipsum header</h4>--}}
-{{--                            <hr class="big-blog-text__line">--}}
-{{--                            <div class="big-blog-text__after d-flex flex-jc-sb">--}}
-{{--                                <a href="#" class="big-blog-text__after-details">Подробнее</a>--}}
-{{--                                <span class="big-blog-text__after-date">12.03.2020</span>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-                </div>
-                @foreach($tasks as $ts)
-                <div class="block-container">
-                    <img class="block-container__img" src="{{asset('upload/imgtasks/'.$ts->img)}}" alt="blog">
-                    <div class="block-container__text-container">
-                        <h5 class="block-container__header">{{$ts->title}}</h5>
-                        <span class="block-container__text">{{$ts->body}}</span>
-                        <div class="block-container__after d-flex flex-jc-sb">
-                            <a href="#" class="block-container__after-details">Подробнее</a>
-                            <span class="block-container__after-date">{{$ts->created_at->format('d.m.Y')}}</span>
-                        </div>
+                    <div class="contacts-service__block-info">
+                        <span class="block-info__header">Телефон:</span>
+                        <span class="block-info__text">
+								+7 (999) 123 45 67
+							</span>
                     </div>
                 </div>
-                @endforeach
-
+                <div class="contacts-service__block d-flex">
+                    <div class="contacts-service__block-image">
+                        <img src="{{ asset('front/img/contacts/email.svg') }}" alt="tel">
+                    </div>
+                    <div class="contacts-service__block-info">
+                        <span class="block-info__header">Email:</span>
+                        <span class="block-info__text">
+								Info@Tutors.com
+							</span>
+                    </div>
+                </div>
+                <div class="contacts-service__block d-flex">
+                    <div class="contacts-service__block-image">
+                        <img src="{{ asset('front/img/contacts/skype.svg') }}" alt="tel">
+                    </div>
+                    <div class="contacts-service__block-info">
+                        <span class="block-info__header">Skype:</span>
+                        <span class="block-info__text">
+								Info@Tutors.com
+							</span>
+                    </div>
+                </div>
             </div>
-{{--            <div class="main-blog__bth-container d-flex">--}}
-{{--                <div class="main-blog__btn d-flex">--}}
-{{--                    <a href="#" class="main-blog__btn-link">Все статьи</a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+        </div>
+        <div class="main-contact-form">
+            <div class="main-contact-form__header">Задать вопрос</div>
+            <div class="main-contact-form__inputs">
+                <form class="question-form d-flex flex-jc-sb" id="contactform">
+                    @csrf
+
+                    <input type="text" class="question-form__name" name="name" placeholder="Имя" required>
+                    <input type="tel" class="question-form__tel" name="tel" placeholder="+7 (___) ___-__-__" required>
+                    <textarea class="question-form__textarea" name="question" placeholder="Задайте вопрос..."></textarea>
+                    <div class="question-form__submit-container">
+                        <input type="submit" class="question-form__submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
+            <div id="sendmessage">
+                Ваше сообщение отправлено!
+            </div>
         </div>
     </div>
 </main>
+
 <footer class="footer">
     <div class="container">
         <div class="footer-links">
@@ -213,6 +221,33 @@
             $('.slider').bxSlider();
         });
     }
+</script>
+<script>
+    $(document).ready(function () {
+        $('#contactform').on('submit', function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                type: 'POST',
+                url: '{{route('contacts.store')}}',
+                data: $('#contactform').serialize(),
+                success: function (data) {
+                    console.log(data.result);
+                    if (data.result) {
+                        $('#senderror').hide();
+                        $('#sendmessage').show();
+                    } else {
+                        $('#senderror').show();
+                        $('#sendmessage').hide();
+                    }
+
+                },
+                error: function () {
+
+                }
+            });
+        });
+    });
 </script>
 </body>
 </html>
