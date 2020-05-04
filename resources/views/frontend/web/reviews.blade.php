@@ -109,22 +109,23 @@
         <div class="main-reviews" id="review-data">
             <h2 class="main-reviews__header">Отзывы</h2>
             @include('frontend.web.partial.rew')
-            <div class="ajax-load text-center" style="display:none">
-                <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Загрузка</p>
-            </div>
+
 
             {{--<div class="review-details">
                 <a href="#">Читать полностью</a>
             </div>--}}
-            {{--<div class="review-btn d-flex">
-                <div class="review-btn__more-reviews">
-                    <a href="#" class="review-btn__more-reviews__href">Показать еще</a>
-                </div>--}}
+{{--            --}}{{--<div class="review-btn d-flex">--}}
+{{--                <div class="review-btn__more-reviews">--}}
+{{--                    <a href="#" class="review-btn__more-reviews__href">Показать еще</a>--}}
+{{--                </div>--}}
                 {{--<div class="review-btn__make-review">
 
                     <a href="#" class="review-btn__make-review__href" data-toggle="modal" data-target="#reviewModal">Оставить отзыв</a>
                 </div>--}}
-            </div>
+
+        </div>
+        <div class="ajax-load text-center" style="display:none">
+            <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Загрузка</p>
         </div>
     </div>
 </main>
@@ -195,10 +196,14 @@
 </script>
 <script type="text/javascript">
     var page = 1;
+    var pageLast = {{$reviews->lastPage()}};
+    console.log(pageLast);
     $(window).scroll(function() {
         if($(window).scrollTop() + $(window).height() >= $(document).height()) {
-            page++;
-            loadMoreData(page);
+            if (page <= pageLast) {
+                page++;
+                loadMoreData(page);
+            }
         }
     });
 
@@ -215,7 +220,7 @@
             })
             .done(function(data)
             {
-                if(data.length == ){
+                if(data.html == ''){
                     $('.ajax-load').html("Отзывов больше нет");
                     return;
                 }

@@ -11,7 +11,7 @@ class ReviewHomeController extends Controller
 {
     public function getReview(Request $request){
 
-        $reviews = Review::where('role', 'teacher')->orderBy('created_at', 'desc')->paginate(5);
+        $reviews = Review::where('role', 'teacher')->orderBy('created_at', 'desc')->paginate(3);
 
         if ($request->ajax()){
             $view = view('frontend.web.partial.rew', compact('reviews'))->render();

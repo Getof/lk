@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'Front\HomeController@index');
 Route::get('/blog', 'Front\BlogController@index');
+Route::get('/post/{post}', 'Front\BlogController@show')->name('post.show');
 Route::get('/reviews', 'Front\ReviewHomeController@getReview');
 Route::get('/contacts', 'Front\MailController@index')->name('contacts.index');
 Route::post('/send', 'Front\MailController@store')->name('contacts.store');

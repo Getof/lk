@@ -32,9 +32,12 @@ class BlogController extends Controller
      * @param  \App\Tasks  $tasks
      * @return \Illuminate\Http\Response
      */
-    public function show(Tasks $tasks)
+    public function show(int $id)
     {
-        //
+
+        return view('frontend.web.post',[
+           'post'=>Tasks::find($id)
+        ]);
     }
 
 

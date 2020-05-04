@@ -129,7 +129,7 @@
                             <h5 class="block-container__header">{{$task->title}}</h5>
                             <span class="block-container__text">{{$task->body}}</span>
                             <div class="block-container__after d-flex flex-jc-sb">
-                                <a href="#" class="block-container__after-details">Подробнее</a>
+                                <a href="{{route('post.show', $task->id)}}" class="block-container__after-details">Подробнее</a>
                                 <span class="block-container__after-date">{{$task->created_at->format('d m Y')}}</span>
                             </div>
                         </div>

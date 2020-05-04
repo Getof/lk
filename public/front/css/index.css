@@ -27,6 +27,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-weight: bold; }
 
+
+
 .container {
   margin: 0 auto; }
 
@@ -567,3 +569,6 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 160px; } }
 
 /*# sourceMappingURL=index.css.map */
+.block-container img {
+    border-radius: 15px 15px 0 0 !important;
+}
