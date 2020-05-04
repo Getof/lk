@@ -26,3 +26,13 @@ $factory->define(User::class, function (Faker $faker) {
         'remember_token' => Str::random(10),
     ];
 });
+
+$factory->define(\App\Review::class, function (Faker $faker) {
+    return [
+        'name' => $faker->name,
+        'role' => 'teacher',
+        'review' => $faker->sentence,
+        'img' => 'nophoto.jpg',
+        'published' => '1', // password,
+    ];
+});

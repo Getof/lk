@@ -7,6 +7,13 @@
     <link href="{{ asset('front/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('front/css/jquery.bxslider.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('front/css/reviews.css') }}">
+    <style type="text/css">
+        .ajax-load{
+            background: #e1e1e1;
+            padding: 10px 0px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 <div class="modal fade" id="registerStartModal" tabindex="-1" role="dialog" aria-labelledby="registerStartModalLabel" aria-hidden="true">
@@ -99,21 +106,24 @@
 </header>
 <main class="main">
     <div class="container">
-        <div class="main-reviews">
+        <div class="main-reviews" id="review-data">
             <h2 class="main-reviews__header">Отзывы</h2>
             @include('frontend.web.partial.rew')
-
-            <div class="review-details">
-                <a href="#">Читать полностью</a>
+            <div class="ajax-load text-center" style="display:none">
+                <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Загрузка</p>
             </div>
-            <div class="review-btn d-flex">
+
+            {{--<div class="review-details">
+                <a href="#">Читать полностью</a>
+            </div>--}}
+            {{--<div class="review-btn d-flex">
                 <div class="review-btn__more-reviews">
                     <a href="#" class="review-btn__more-reviews__href">Показать еще</a>
-                </div>
-                <div class="review-btn__make-review">
+                </div>--}}
+                {{--<div class="review-btn__make-review">
 
                     <a href="#" class="review-btn__make-review__href" data-toggle="modal" data-target="#reviewModal">Оставить отзыв</a>
-                </div>
+                </div>--}}
             </div>
         </div>
     </div>
@@ -181,6 +191,41 @@
         $(document).ready(function(){
             $('.slider').bxSlider();
         });
+    }
+</script>
+<script type="text/javascript">
+    var page = 1;
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() >= $(document).height()) {
+            page++;
+            loadMoreData(page);
+        }
+    });
+
+
+    function loadMoreData(page){
+        $.ajax(
+            {
+                url: '?page=' + page,
+                type: "get",
+                beforeSend: function()
+                {
+                    $('.ajax-load').show();
+                }
+            })
+            .done(function(data)
+            {
+                if(data.length == ){
+                    $('.ajax-load').html("Отзывов больше нет");
+                    return;
+                }
+                $('.ajax-load').hide();
+                $("#review-data").append(data.html);
+            })
+            .fail(function(jqXHR, ajaxOptions, thrownError)
+            {
+                alert('Сервер не отвечает...');
+            });
     }
 </script>
 

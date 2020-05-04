@@ -153,7 +153,7 @@
                     <a href="/contacts">Контакты</a>
                 </li>
                 <li class="footer-links__list-item">
-                    <a href="/">Отзывы</a>
+                    <a href="/reviews">Отзывы</a>
                 </li>
                 <li class="footer-links__list-item">
                     <a href="#">О нас</a>
