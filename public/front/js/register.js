@@ -8,3 +8,11 @@ $(".register-modal__type-block").on("click", function() {
 	if (type === "parent") $('.register-modal__form-input__invite').css("display","block");
 	else $('.register-modal__form-input__invite').css("display","none");
 });
+
+
+
+
+
+
+
+
