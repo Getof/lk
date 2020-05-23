@@ -1,0 +1,385 @@
+@font-face {
+  font-family: "Arsenal";
+  src: url(/fonts/ArsenalBold.eot?141339429c6b71f2b48db7dc93658303);
+  /* IE9 Compat Modes */
+  src: url(/fonts/ArsenalBold.eot?141339429c6b71f2b48db7dc93658303) format("embedded-opentype"), url(/fonts/ArsenalBold.woff?adce3c25e2d96586258a0defcfebf4ef) format("woff"), url(/fonts/ArsenalBold.ttf?d3e7203142cb1c5f4c54370f814ea93f) format("truetype");
+  /* Safari, Android, iOS */
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+div,
+p,
+form,
+input,
+span,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.long-line {
+  border-bottom: 1px solid #191919;
+  padding: 0;
+  margin: 0;
+}
+
+.aside {
+  width: 24.4%;
+  height: 100%;
+  float: left;
+  margin-left: none;
+  background: #FFFFFF;
+  position: fixed;
+}
+
+.aside-container {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.aside-header-mobile {
+  display: none !important;
+}
+
+.aside-header-normal {
+  display: flex !important;
+  align-items: center;
+}
+
+.aside-header-container {
+  padding: 15px 0 55px;
+}
+
+.aside-header {
+  height: 50px;
+  border-radius: 10px;
+  background: #F9F9F9;
+}
+
+.aside-header__user-name {
+  font-family: Arsenal, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #191919;
+  font-size: 16px;
+  line-height: 140%;
+  margin: 10px;
+}
+
+.aside-header {
+  padding: 0 14px 0 10px;
+}
+
+.aside-links__element {
+  margin-bottom: 40px;
+  text-decoration: none;
+  opacity: 0.4;
+  display: block;
+}
+
+.aside-links__element:hover {
+  text-decoration: none;
+}
+
+.aside-links-active {
+  opacity: 1;
+}
+
+.aside-links-active:after {
+  position: absolute;
+  display: block;
+  margin-top: -35px;
+  margin-left: 30.5ch;
+  content: " ";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 25px 21px 25px 0;
+  border-color: transparent #f9f9f9 transparent transparent;
+}
+
+.aside-links__element-text {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #191919;
+  font-size: 13px;
+  line-height: 160%;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1170px) {
+  .aside {
+    width: 80%;
+    background: #FFFFFF;
+    z-index: 2;
+    margin-left: -5000px;
+    transition: 0.5s;
+  }
+
+  .aside-header-mobile {
+    display: flex !important;
+    padding: 0;
+  }
+
+  .aside-header-normal {
+    display: none !important;
+  }
+
+  .aside-container {
+    width: 90.75%;
+    margin: 0 auto;
+  }
+
+  .aside-header {
+    background: transparent;
+  }
+
+  .aside-header_close {
+    margin-top: 7px;
+  }
+
+  .aside-links-active:after {
+    display: none;
+  }
+}
+
+.nav-head {
+  background: #FFFFFF;
+  width: 75.6%;
+  float: right;
+}
+
+.nav-head-container {
+  width: 870px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.nav-head-right,
+.nav-head-right__input-container {
+  align-items: center;
+}
+
+.nav-head-right__input-container {
+  display: flex;
+}
+
+.nav-head-right__input-container .input-field {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #191919;
+  font-size: 14px;
+  line-height: 160%;
+  padding: 14px 45px 14px 14px;
+  width: 308px;
+  height: 50px;
+  background: #F9F9F9;
+  border-radius: 10px;
+  border: 0;
+}
+
+.nav-head-right__input-container .input-search {
+  margin-left: -40px;
+}
+
+.nav-head-right__btn-container {
+  margin-left: 70px;
+}
+
+.nav-head-right__btn-container .btn-href:nth-child(2) {
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 1170px) {
+  .nav-head {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    float: none;
+  }
+
+  .nav-head-container {
+    width: 90%;
+  }
+
+  .nav-head-right__input-container {
+    display: none;
+  }
+
+  .nav-head-right__btn-container .btn-href:not(:nth-child(2)) {
+    display: none;
+  }
+
+  .nav-head-right__btn-container {
+    margin: 0;
+  }
+}
+
+.main {
+  background: #f9f9f9;
+  width: 75.6%;
+  float: right;
+}
+
+.main-container {
+  width: 870px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 1170px) {
+  .main {
+    float: none;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 45px;
+  }
+
+  .main-container {
+    padding-top: 15px;
+    width: 90%;
+  }
+
+  .slider {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .slider div {
+    display: inline-block;
+  }
+}
+
+.black-btn {
+  background: #191919;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  display: block;
+}
+
+.white-btn {
+  border: 1px solid black;
+  color: #191919;
+  border-radius: 10px;
+  text-align: center;
+  background: #FFFFFF;
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.white-block {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+}
+
+.heading {
+  font-family: Arsenal, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.nav-bottom {
+  display: none;
+}
+
+@media screen and (max-width: 1170px) {
+  .nav-bottom {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .nav-bottom-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  .nav-bottom__link,
+  .nav-bottom__link:hover {
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #191919;
+    font-size: 10px;
+    line-height: 160%;
+    text-decoration: none;
+  }
+
+  .nav-bottom__link .nav-bottom__link-text,
+  .nav-bottom__link:hover .nav-bottom__link-text {
+    margin-top: 4px;
+    opacity: 0.4;
+  }
+}
+
+body {
+  background: #f9f9f9;
+}
+
+#back-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  opacity: 0.2;
+  display: none;
+  z-index: 1;
+}
+

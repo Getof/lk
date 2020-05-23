@@ -42,7 +42,7 @@
             <div class="register-modal-finish">
                 <h2 class="register-modal__header">Регистрация</h2>
                 <form method="POST" action="/" class="register-modal__form-container d-flex flex-jc-sb">
-                    <input type="hidden" name="_token" value="YQ2fFS0mICl7Wn5OAs9E3dfP8s00HUkIOUXNLLBQ">
+                    @csrf
                     <input type="text" class="register-modal__form-input" name="name" placeholder="Имя">
                     <input type="text" class="register-modal__form-input" name="surname" placeholder="Фамилия">
                     <input type="tel" class="register-modal__form-input" name="tel" placeholder="Телефон">
@@ -50,6 +50,7 @@
                     <input type="text" class="register-modal__form-input register-modal__form-input__invite" name="invite" placeholder="Пригласительная ссылка">
                     <input type="password" class="register-modal__form-input" name="password" placeholder="Пароль">
                     <input type="password" class="register-modal__form-input" name="password_confirmation" placeholder="Подтвердите пароль">
+                    <input type="hidden"  name="type" id="type" value="student">
                     <div class="register-modal__btn-container">
                         <input type="submit" class="register-modal__btn" value="Зарегистрироваться">
                     </div>
