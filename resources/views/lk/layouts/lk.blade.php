@@ -16,11 +16,11 @@
 <body>
 @yield('aside')
 
-@include('nav-head')
+@include('lk.custom.nav-head')
 
 @yield('main')
 
-@include('nav-bottom')
+@include('lk.custom.nav-bottom')
 
 <script type="text/javascript" src="{{ asset('front/js/bootstrap.min.js') }}"></script>
 

@@ -31,6 +31,12 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin'], function (){
 
 });
 
+Route::group(['prefix'=>'lk', 'namespace'=>'Lk'], function(){
+   Route::get('/teacher', 'TeacherController@index')->name('teacher.index');
+});
+
 //Auth::routes();
+
+
 
 //Route::get('/home', 'HomeController@index')->name('home');
