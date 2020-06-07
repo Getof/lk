@@ -9,7 +9,7 @@
                 </a>
             </div>
             <div class="nav-head-right__btn-container">
-                <a href="http://macfort-test.ru/cp#/chat" class="btn-href">
+                <a href="/lk/{{Auth::user()->role}}/chat" class="btn-href">
                     <img src="{{ asset('front/img/lk/menu/mail-logo.svg') }}" alt="mail" class="btn-href__img"></a>
                 <a href="http://macfort-test.ru/cp#" class="btn-href">
                     <img src="{{ asset('front/img/lk/menu/bell.svg') }}" alt="bell" class="btn-href__img"></a>

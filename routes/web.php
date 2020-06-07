@@ -33,6 +33,8 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin'], function (){
 
 Route::group(['prefix'=>'lk', 'namespace'=>'Lk'], function(){
    Route::get('/teacher', 'TeacherController@index')->name('teacher.index');
+   Route::get('/teacher/chat', 'ChatController@index')->name('teacher.chat');
+
 });
 
 //Auth::routes();
