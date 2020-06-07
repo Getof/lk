@@ -41,13 +41,13 @@
         <div class="modal-content">
             <div class="register-modal-finish">
                 <h2 class="register-modal__header">Регистрация</h2>
-                <form method="POST" action="/" class="register-modal__form-container d-flex flex-jc-sb">
+                <form method="POST" action="/reg" class="register-modal__form-container d-flex flex-jc-sb">
                     @csrf
                     <input type="text" class="register-modal__form-input" name="name" placeholder="Имя">
                     <input type="text" class="register-modal__form-input" name="surname" placeholder="Фамилия">
                     <input type="tel" class="register-modal__form-input" name="tel" placeholder="Телефон">
                     <input type="email" class="register-modal__form-input" name="email" placeholder="Email">
-                    <input type="text" class="register-modal__form-input register-modal__form-input__invite" name="invite" placeholder="Пригласительная ссылка">
+{{--                    <input type="text" class="register-modal__form-input register-modal__form-input__invite" name="invite" placeholder="Пригласительная ссылка">--}}
                     <input type="password" class="register-modal__form-input" name="password" placeholder="Пароль">
                     <input type="password" class="register-modal__form-input" name="password_confirmation" placeholder="Подтвердите пароль">
                     <input type="hidden"  name="type" id="type" value="student">
@@ -64,8 +64,8 @@
         <div class="modal-content">
             <div class="login-modal">
                 <h2 class="login-modal__header">Авторизация</h2>
-                <form method="POST" action="/" class="login-modal__form-container d-flex flex-jc-sb">
-                    <input type="hidden" name="_token" value="YQ2fFS0mICl7Wn5OAs9E3dfP8s00HUkIOUXNLLBQ">
+                <form method="POST" action="/login" class="login-modal__form-container d-flex flex-jc-sb">
+                    @csrf
                     <input type="text" class="login-modal__form-input" name="email" placeholder="Login">
                     <input type="password" class="login-modal__form-input" name="password" placeholder="Пароль">
                     <div class="login-modal__btn-container">

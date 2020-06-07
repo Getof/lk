@@ -17,7 +17,7 @@ class CreateReviewsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('role');
-            $table->string('review');
+            $table->text('review');
             $table->string('img');
             $table->tinyInteger('published')->nullable();
             $table->timestamps();

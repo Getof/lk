@@ -36,7 +36,9 @@ Route::group(['prefix'=>'lk', 'namespace'=>'Lk'], function(){
 });
 
 //Auth::routes();
-
+Route::post('/reg', 'Front\HomeController@register')->name('auth.reg');
+Route::post('/login', 'Front\HomeController@login')->name('auth.login');
+Route::get('/logout', 'Front\HomeController@logout')->name('auth.logout');
 
 
 //Route::get('/home', 'HomeController@index')->name('home');

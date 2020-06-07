@@ -7,21 +7,21 @@
                 </a>
             </div>
             <div class="header-btn d-flex flex-jc-sb">
-                @guest
-                <div class="header-btn__register">
-                    <a href="#" data-toggle="modal" data-target="#registerStartModal">Регистрация</a>
-                </div>
-                <div class="header-btn__login">
-                    <a href="#" data-toggle="modal" data-target="#loginModal">Вход</a>
-                </div>
-                    @else
+                    @auth
                     <div class="header-btn__register">
-                        <a href="#" data-toggle="modal" data-target="#registerStartModal">{{Auth::user()->name}}</a>
+                        <a href="/lk/{{Auth::user()->role}}">{{Auth::user()->name}}</a>
                     </div>
                     <div class="header-btn__login">
-                        <a href="#" data-toggle="modal" data-target="#loginModal">Выход</a>
+                        <a href="/logout">Выход</a>
                     </div>
-                @endguest
+                    @else
+                        <div class="header-btn__register">
+                            <a href="#" data-toggle="modal" data-target="#registerStartModal">Регистрация</a>
+                        </div>
+                        <div class="header-btn__login">
+                            <a href="#" data-toggle="modal" data-target="#loginModal">Вход</a>
+                        </div>
+                    @endauth
             </div>
         </div>
     </div>
