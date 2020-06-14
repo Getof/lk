@@ -2,10 +2,10 @@
     <div id="addFileModal" tabindex="-1" role="dialog" aria-labelledby="addFileModalLabel" class="modal fade" style="display: none;" aria-hidden="true">
         <div role="document" class="modal-dialog addFile-modal-label">
             <div class="modal-content">
-                <form class="addFile-modal">
+                <div class="addFile-modal">
                     <h2 class="addFile-modal__header materials-modal-header">Добавить файл</h2>
 
-                    <form id="addFileForm" action="{{route('teacher.file.add')}}" method="post" enctype="multipart/form-data" class="addFile-modal__form">
+                    <div id="addFileForm" class="addFile-modal__form">
                         <div class="addFile-modal__form-block">
                             <span class="materials-modal-small-header">Название:</span>
                             <input type="text" id="file-name" placeholder="Название материала" class="materials-modal-input">
@@ -34,9 +34,9 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                     <div  class="addFile-modal-bottom materials-modal-bottom-btn">
-                        <div type="submit" onclick="addFile()" class="black-btn">Добавить</div>
+                        <div onclick="addFile()" type="submit" class="black-btn">Добавить</div>
                         <div onclick="$(function () {$('#addFileModal').modal('hide')});" class="white-btn">Отмена</div>
                     </div>
                 </div>

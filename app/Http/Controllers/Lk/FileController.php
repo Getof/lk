@@ -55,6 +55,8 @@ class FileController extends Controller
             'file_name'=>$filename,
             'ext_img'=>$file->getClientOriginalExtension()
         ]);
+
+        return $filename;
     }
 
     /**

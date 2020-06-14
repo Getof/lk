@@ -130,20 +130,70 @@
             //             $(this).css("left", "10px");
             //     }
             // });
+
+
+
+
         });
+
         function addFile(){
-            fr = document.getElementById('addFileForm');
-            alert(fr);
-            fr.submit(function (e) {
-                alert('10');
+            let nameF = document.getElementById('file-name').value;
+            let pathF = document.getElementById('file-path').value;
+            let form = postAndRedirect({name: nameF, path: pathF});
+            jQuery('body').append(form);
+            jQuery(form).submit(function () {
+                $.ajax({
+                    type: "post",
+                    url: 'files/add', // need to create this post route
+                    data: form.serialize(),
+                    cache: false,
+                    success: function (data) {
+                        console.log(data);
+
+                    },
+                    error: function (jqXHR, status, err) {
+                    },
+                    complete: function () {
+                    }
+                });
+
+            });
+
+
+
+        }
+
+        function postAndRedirect(postData)
+        {
+            let postFormStr = "<form enctype='multipart/form-data'>\n";
+
+            for (let key in postData)
+            {
+                if (postData.hasOwnProperty(key))
+                {
+                    postFormStr += "<input type='hidden' name='" + key + "' value='" + postData[key] + "'></input>";
+                }
+            }
+
+            postFormStr += "</form>";
+
+            let formElement = jQuery(postFormStr);
+
+            return formElement;
+        }
+
+        $('#sb').click(function () {
+            alert('10');
+            $('#addFileForm').submit(function (e) {
+                var fr = $(this);
+                alert(fr);
 
                 e.preventDefault();
                 var form = $(this);
-                var url = form.attr('action');
 
                 $.ajax({
                     type: "post",
-                    url: url, // need to create this post route
+                    url: 'files/add', // need to create this post route
                     data: form.serialize(),
                     cache: false,
                     success: function (data) {
@@ -154,7 +204,9 @@
                     }
                 });
             })
-        }
+
+        })
+
 
 
 
