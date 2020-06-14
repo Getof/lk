@@ -36,7 +36,9 @@ Route::group(['prefix'=>'lk', 'namespace'=>'Lk'], function(){
    Route::get('/teacher/chat', 'ChatController@index')->name('teacher.chat');
    Route::get('/teacher/chat/{id}', 'ChatController@getMessages')->name('teacher.messages');
    Route::post('/teacher/chat/message', 'ChatController@sendMessage')->name('mess.send');
-    Route::get('/teacher/material', 'MaterialController@index')->name('teacher.material');
+   Route::get('/teacher/material', 'MaterialController@index')->name('teacher.material');
+   Route::get('/teacher/material/files/', 'FileController@index')->name('teacher.file');
+   Route::post('/teacher/material/files/add', 'FileController@store')->name('teacher.file.add');
 
 
 });

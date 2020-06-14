@@ -685,15 +685,15 @@ body {
     margin-bottom: 30px;
     white-space: nowrap;
     overflow-x: scroll;
-    -ms-overflow-style: none;  /* IE 10+ */
-    scrollbar-width: none; /* Firefox */
+    /*-ms-overflow-style: none;  !* IE 10+ *!*/
+    /*scrollbar-width: none; !* Firefox *!*/
     /*-ms-overflow-style: none;*/
     /*overflow: -moz-scrollbars-none;*/
 }
-.flow_links-menu::-webkit-scrollbar {
-    width: 0;
-    display: none;
-}
+/*.flow_links-menu::-webkit-scrollbar {*/
+/*    width: 0;*/
+/*    display: none;*/
+/*}*/
 .flow_links-menu__btn {
     text-align: center;
     cursor: pointer;
@@ -919,4 +919,127 @@ body {
         margin-bottom: 15px;
         width: 100%;
     }
+}
+
+#addFileModal .modal-dialog {
+    min-width: 970px;
+}
+.addFile-modal-label .modal-content {
+    padding: 50px 100px;
+}
+.addFile-modal__header {
+    padding-bottom: 30px;
+}
+.addFile-modal__form-block {
+    padding-bottom: 30px;
+}
+
+#editFileModal .modal-dialog {
+    min-width: 570px;
+}
+.editFile-modal-label .modal-content {
+    padding: 50px 100px;
+}
+.editFile-modal__header {
+    padding-bottom: 30px;
+}
+.editFile-modal__form-block {
+    padding-bottom: 30px;
+}
+
+.files-title {
+    font-size: 22px;
+    /* identical to box height, or 31px */
+    color: #191919;
+    padding-bottom: 20px;
+}
+.files-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.files-block {
+    align-items: center;
+}
+.files-block, .course-block-add {
+    padding: 15px 10px 15px 15px;
+    height: 78px;
+    width: 270px;
+    margin-bottom: 30px;
+}
+.files-block__text {
+    display: grid;
+}
+.file-block__text-container {
+    margin-left: 17.25px;
+}
+.text-header {
+    font-size: 16px;
+}
+.text-details {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    /* or 19px */
+    color: #191919;
+    opacity: 0.4;
+}
+.course-block-add {
+    border-radius: 10px;
+    background: transparent;
+    border: 1.5px dashed #e3e3e3;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1170px) {
+    .files-title {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .file-block__text-container {
+        margin-left: 12.12px;
+    }
+    .text-header {
+        font-size: 14px;
+    }
+    .text-details {
+        font-size: 11px;
+    }
+    .files-block, .course-block-add {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+.modal-tags-field {
+    background: #F9F9F9;
+    border: 1px solid rgba(25, 25, 25, 0.03);
+    box-sizing: border-box;
+    border-radius: 5px;
+    align-items: center;
+    height: 75px;
+    padding: 14px;
+    overflow-y: auto;
+}
+.modal-tags-field input, .modal-tags-field input:hover {
+    border: 0;
+    background: transparent;
+    height: 100%;
+    width: 200px;
+}
+.modal-tags-field .tag {
+    background: black;
+    border-radius: 3px;
+    color: white;
+    padding: 8px 12px;
+    margin-right: 14px;
+}
+.modal-tags-field .remove {
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Lk;
 use App\File;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class FileController extends Controller
 {
@@ -15,7 +16,14 @@ class FileController extends Controller
      */
     public function index()
     {
-        //
+        $id_t = Auth::id();
+        $files = File::where('teacher_id', '=', $id_t)->get();
+
+        return view('lk.custom.materials.file', [
+            'files' => $files
+        ]);
+
+
     }
 
     /**
@@ -36,7 +44,17 @@ class FileController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $path = public_path().'/upload/matfiles/';
+        $file = $request->file('path');
+        $filename = $request->get('name').'.'.$file->getClientOriginalExtension();
+        $file->move($path,$filename);
+
+        File::create([
+            'teacher_id'=>Auth::id(),
+            'name'=>$request->get('name'),
+            'file_name'=>$filename,
+            'ext_img'=>$file->getClientOriginalExtension()
+        ]);
     }
 
     /**

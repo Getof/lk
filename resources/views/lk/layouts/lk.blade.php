@@ -10,9 +10,12 @@
     <link href="{{ asset('front/css/lk.css') }}" rel="stylesheet">
     <link href="{{ asset('front/css/all.css') }}" rel="stylesheet">
     <link href="{{ asset('front/css/animate.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css">
+
     @yield('css')
     <script type="text/javascript" src="{{ asset('front/js/jquery-3.4.1.min.js') }}"></script>
     <script src="https://js.pusher.com/6.0/pusher.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
 
         // Enable pusher logging - don't include this in production
@@ -21,7 +24,7 @@
 
 </head>
 <body>
-@include('lk.custom.aside-t');
+@include('lk.custom.aside-t')
 
 @include('lk.custom.nav-head')
 

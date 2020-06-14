@@ -60,13 +60,6 @@
             if (my_id == data.from_user){
 
             }
-
-
-
-
-
-
-
         });
 
 

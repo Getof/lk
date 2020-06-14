@@ -15,9 +15,11 @@ class CreateFilesTable extends Migration
     {
         Schema::create('files', function (Blueprint $table) {
             $table->id();
+            $table->integer('teacher_id');
             $table->string('name');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->string('file_name');
+            $table->string('ext_img');
             $table->timestamps();
         });
     }

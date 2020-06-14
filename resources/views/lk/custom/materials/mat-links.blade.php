@@ -1,6 +1,6 @@
 <div class="materials-links">
     <div class="flow_links">
-        <div class="flow_links-menu white-block" data-control="scroll">
+        <div class="flow_links-menu white-block">
             <a href="#" class="flow_links-menu__btn black-btn router-link-exact-active flow_links-menu__btn-active" id="courses">
                 <span class="flow_links-menu__btn-text">Курсы (0)</span>
             </a>
