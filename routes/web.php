@@ -39,6 +39,11 @@ Route::group(['prefix'=>'lk', 'namespace'=>'Lk'], function(){
    Route::get('/teacher/material', 'MaterialController@index')->name('teacher.material');
    Route::get('/teacher/material/files/', 'FileController@index')->name('teacher.file');
    Route::post('/teacher/material/files/add', 'FileController@store')->name('teacher.file.add');
+   Route::post('/teacher/material/files/edit', 'FileController@update')->name('teacher.file.edit');
+
+    Route::get('/teacher/material/pictures', 'PictureController@index')->name('teacher.pict');
+    Route::post('/teacher/material/pictures/add', 'PictureController@store')->name('teacher.pict.add');
+    Route::post('/teacher/material/pictures/edit', 'PictureController@update')->name('teacher.pict.edit');
 
 
 });

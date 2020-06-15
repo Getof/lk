@@ -45,8 +45,8 @@ class FileController extends Controller
     public function store(Request $request)
     {
         $path = public_path().'/upload/matfiles/';
-        $file = $request->file('path');
-        $filename = $request->get('name').'.'.$file->getClientOriginalExtension();
+        $file = $request->file('file');
+        $filename = time().'.'.$file->getClientOriginalExtension();
         $file->move($path,$filename);
 
         File::create([
@@ -56,7 +56,12 @@ class FileController extends Controller
             'ext_img'=>$file->getClientOriginalExtension()
         ]);
 
-        return $filename;
+        $id_t = Auth::id();
+        $files = File::where('teacher_id', '=', $id_t)->get();
+
+        return view('lk.custom.materials.file', [
+            'files' => $files
+        ]);
     }
 
     /**
@@ -90,7 +95,20 @@ class FileController extends Controller
      */
     public function update(Request $request, File $file)
     {
-        //
+        $fl = File::find($request->get('id'));
+
+        $fl->update([
+           'name' => $request->get('name'),
+           'description' => $request->get('desc')
+        ]);
+
+        $id_t = Auth::id();
+        $files = File::where('teacher_id', '=', $id_t)->get();
+
+        return view('lk.custom.materials.file', [
+            'files' => $files
+        ]);
+
     }
 
     /**

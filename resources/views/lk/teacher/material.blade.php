@@ -103,6 +103,13 @@
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
+
+        var id_file = '';
+        var nm_file = '';
+        var nm_desc = '';
+        var id_pict = '';
+        var nm_pict = '';
+        var pict_desc = '';
         $(document).ready(function () {
             $('.matrials-container').html('');
 
@@ -131,24 +138,39 @@
             //     }
             // });
 
-
-
-
         });
+
+        function modalShow(param, nm, desc){
+            nm_file = nm;
+            nm_desc = desc;
+            id_file = $(param).attr('id');
+            $('#editFileModal').modal('show');
+            $('#editFileModal').on('shown.bs.modal', function (e) {
+                var modal = $(this);
+                modal.find('#file-edit-title').val(nm_file);
+                modal.find('#file-edit-desc').val(nm_desc);
+            });
+        }
+
 
         function addFile(){
             let nameF = document.getElementById('file-name').value;
-            let pathF = document.getElementById('file-path').value;
-            let form = postAndRedirect({name: nameF, path: pathF});
-            jQuery('body').append(form);
-            jQuery(form).submit(function () {
+            let pathF = document.getElementById('file-path');
+            var formData = new FormData();
+            formData.append('name',nameF);
+            formData.append('file', pathF.files[0]);
                 $.ajax({
                     type: "post",
-                    url: 'files/add', // need to create this post route
-                    data: form.serialize(),
+                    url: 'material/files/add', // need to create this post route
+                    data: formData,
+                    processData: false,
+                    contentType: false,
                     cache: false,
                     success: function (data) {
-                        console.log(data);
+                        $('#addFileModal').modal('hide');
+                        $('#addFileModal').on('hidden.bs.modal', function (e) {
+                            $('.matrials-container').html(data);
+                        });
 
                     },
                     error: function (jqXHR, status, err) {
@@ -156,63 +178,116 @@
                     complete: function () {
                     }
                 });
-
-            });
-
-
-
         }
 
-        function postAndRedirect(postData)
-        {
-            let postFormStr = "<form enctype='multipart/form-data'>\n";
+        function editFile() {
+            let idF = id_file;
+            let nameF = document.getElementById('file-edit-title').value;
+            let descF = document.getElementById('file-edit-desc').value;
+            var formData = new FormData();
+            formData.append('id', idF);
+            formData.append('name', nameF);
+            formData.append('desc', descF);
+            $.ajax({
+                type: "post",
+                url: 'material/files/edit', // need to create this post route
+                data: formData,
+                processData: false,
+                contentType: false,
+                cache: false,
+                success: function (data) {
+                    $('#editFileModal').modal('hide');
+                    $('#editFileModal').on('hidden.bs.modal', function (e) {
+                        $('.matrials-container').html(data);
+                    });
 
-            for (let key in postData)
-            {
-                if (postData.hasOwnProperty(key))
-                {
-                    postFormStr += "<input type='hidden' name='" + key + "' value='" + postData[key] + "'></input>";
+                },
+                error: function (jqXHR, status, err) {
+                },
+                complete: function () {
                 }
-            }
-
-            postFormStr += "</form>";
-
-            let formElement = jQuery(postFormStr);
-
-            return formElement;
+            });
         }
 
-        $('#sb').click(function () {
-            alert('10');
-            $('#addFileForm').submit(function (e) {
-                var fr = $(this);
-                alert(fr);
+        function modalEditShow(param, nm, desc){
+            nm_pict = nm;
+            pict_desc = desc;
+            id_pict = $(param).attr('id');
+            $('#editPictureModal').modal('show');
+            $('#editPictureModal').on('shown.bs.modal', function (e) {
+                var modal = $(this);
+                modal.find('#picture-edit-title').val(nm_pict);
+                modal.find('#picture-edit-desc').val(pict_desc);
+            });
+        }
 
-                e.preventDefault();
-                var form = $(this);
+        function showPicture(param, title) {
+            let url = $(param).attr('src');
+            $('#showPictureModal img').attr('src', url);
+            $('#showPictureModal').modal('show');
+            $('#showPictureModal').on('shown.bs.modal', function (e) {
+                var modal = $(this);
+                modal.find('#title').text(title);
+            });
+        }
 
-                $.ajax({
-                    type: "post",
-                    url: 'files/add', // need to create this post route
-                    data: form.serialize(),
-                    cache: false,
-                    success: function (data) {
-                    },
-                    error: function (jqXHR, status, err) {
-                    },
-                    complete: function () {
-                    }
-                });
-            })
+        function addPicture(){
+            let nameF = document.getElementById('picture-title').value;
+            let descF = document.getElementById('picture-desc').value;
+            let pathF = document.getElementById('picture-file');
+            var formData = new FormData();
+            formData.append('name',nameF);
+            formData.append('desc',descF);
+            formData.append('file', pathF.files[0]);
+            $.ajax({
+                type: "post",
+                url: 'material/pictures/add', // need to create this post route
+                data: formData,
+                processData: false,
+                contentType: false,
+                cache: false,
+                success: function (data) {
+                    $('#addPictureModal').modal('hide');
+                    $('#addPictureModal').on('hidden.bs.modal', function (e) {
+                        $('.matrials-container').html(data);
+                    });
 
-        })
+                },
+                error: function (jqXHR, status, err) {
+                },
+                complete: function () {
+                }
+            });
+        }
 
+        function editPict() {
+            let idP = id_pict;
+            let nameP = document.getElementById('picture-edit-title').value;
+            let descP = document.getElementById('picture-edit-desc').value;
+            var formData = new FormData();
+            formData.append('id', idP);
+            formData.append('name', nameP);
+            formData.append('desc', descP);
+            $.ajax({
+                type: "post",
+                url: 'material/pictures/edit', // need to create this post route
+                data: formData,
+                processData: false,
+                contentType: false,
+                cache: false,
+                success: function (data) {
+                    $('#editPictureModal').modal('hide');
+                    $('#editPictureModal').on('hidden.bs.modal', function (e) {
+                        $('.matrials-container').html(data);
+                    });
 
-
-
-
-
-
+                },
+                error: function (jqXHR, status, err) {
+                },
+                complete: function () {
+                }
+            });
+        }
     </script>
 @endsection
 
