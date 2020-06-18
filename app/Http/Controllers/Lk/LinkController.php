@@ -42,7 +42,18 @@ class LinkController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Link::create([
+            'teacher_id'=>Auth::id(),
+            'name'=>$request->get('name'),
+            'link'=>$request->get('link')
+        ]);
+
+        $id_t = Auth::id();
+        $links = Link::where('teacher_id', '=', $id_t)->get();
+
+        return view('lk.custom.materials.link', [
+            'links' => $links
+        ]);
     }
 
     /**
@@ -76,7 +87,19 @@ class LinkController extends Controller
      */
     public function update(Request $request, Link $link)
     {
-        //
+        $fl = Link::find($request->get('id'));
+
+        $fl->update([
+            'name' => $request->get('name'),
+            'link' => $request->get('link')
+        ]);
+
+        $id_t = Auth::id();
+        $links = Link::where('teacher_id', '=', $id_t)->get();
+
+        return view('lk.custom.materials.link', [
+            'links' => $links
+        ]);
     }
 
     /**

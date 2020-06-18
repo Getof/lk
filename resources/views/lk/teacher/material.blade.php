@@ -110,6 +110,9 @@
         var id_pict = '';
         var nm_pict = '';
         var pict_desc = '';
+        var id_link = '';
+        var nm_link = '';
+        var url_link = '';
         $(document).ready(function () {
             $('.matrials-container').html('');
 
@@ -278,6 +281,75 @@
                 success: function (data) {
                     $('#editPictureModal').modal('hide');
                     $('#editPictureModal').on('hidden.bs.modal', function (e) {
+                        $('.matrials-container').html(data);
+                    });
+
+                },
+                error: function (jqXHR, status, err) {
+                },
+                complete: function () {
+                }
+            });
+        }
+
+        function modalLinkShow(param, nm, lnk){
+            nm_link = nm;
+            url_link = lnk;
+            id_link = $(param).attr('id');
+            $('#editLinkModal').modal('show');
+            $('#editLinkModal').on('shown.bs.modal', function (e) {
+                var modal = $(this);
+                modal.find('#link-edit-title').val(nm_link);
+                modal.find('#link-edit-url').val(url_link);
+            });
+        }
+
+        function addLink() {
+            let nameL = document.getElementById('link-name').value;
+            let urlL = document.getElementById('link-url').value;
+            var formData = new FormData();
+            formData.append('name',nameL);
+            formData.append('link',urlL);
+            $.ajax({
+                type: "post",
+                url: 'material/links/add', // need to create this post route
+                data: formData,
+                processData: false,
+                contentType: false,
+                cache: false,
+                success: function (data) {
+                    $('#addLinkModal').modal('hide');
+                    $('#addLinkModal').on('hidden.bs.modal', function (e) {
+                        $('.matrials-container').html(data);
+                    });
+
+                },
+                error: function (jqXHR, status, err) {
+                },
+                complete: function () {
+                }
+            });
+
+        }
+
+        function editLink() {
+            let idL = id_link;
+            let nameL = document.getElementById('link-edit-title').value;
+            let urlL = document.getElementById('link-edit-url').value;
+            var formData = new FormData();
+            formData.append('id', idL);
+            formData.append('name', nameL);
+            formData.append('link', urlL);
+            $.ajax({
+                type: "post",
+                url: 'material/links/edit', // need to create this post route
+                data: formData,
+                processData: false,
+                contentType: false,
+                cache: false,
+                success: function (data) {
+                    $('#editLinkModal').modal('hide');
+                    $('#editLinkModal').on('hidden.bs.modal', function (e) {
                         $('.matrials-container').html(data);
                     });
 

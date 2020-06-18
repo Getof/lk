@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="addLink-modal-bottom materials-modal-bottom-btn">
-                        <div class="black-btn">Добавить</div>
+                        <div onclick="addLink()" class="black-btn">Добавить</div>
                         <div onclick="$(function () {$('#addLinkModal').modal('hide')});" class="white-btn">Отмена</div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="editLink-modal-bottom materials-modal-bottom-btn">
-                        <div class="black-btn">Сохранить</div>
+                        <div onclick="editLink()" class="black-btn">Сохранить</div>
                         <div onclick="$(function () {$('#editLinkModal').modal('hide')});" class="white-btn">Отмена</div>
                     </div>
                 </div>
@@ -74,13 +74,13 @@
             <span class="links-block__text-header heading">"{{$link->name}}"</span>
             <a target="_blank" href="{{$link->link}}" class="links-block__text-details">{{$link->link}}</a>
         </div>
-        <a class="links-block__settings">
+        <a id="{{$link->id}}" onclick="modalLinkShow(this, '{{$link->name}}', '{{$link->link}}')" class="links-block__settings">
             <img src="{{ asset('front/img/lk/gray_settings.svg') }}" alt="settings">
         </a>
     </div>
     @endforeach
 
-    <a class="link-block-add d-flex">
+    <a onclick="$(function () {$('#addLinkModal').modal('show')});" class="link-block-add d-flex">
         <div class="link-block-add-container">
             <img src="{{ asset('front/img/lk/plus.svg') }}" alt="plus">
             <span class="heading">Добавить ссылку</span>

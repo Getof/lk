@@ -46,6 +46,8 @@ Route::group(['prefix'=>'lk', 'namespace'=>'Lk'], function(){
     Route::post('/teacher/material/pictures/edit', 'PictureController@update')->name('teacher.pict.edit');
 
     Route::get('/teacher/material/links', 'LinkController@index')->name('teacher.link');
+    Route::post('/teacher/material/links/add', 'LinkController@store')->name('teacher.link.add');
+    Route::post('/teacher/material/links/edit', 'LinkController@update')->name('teacher.link.update');
 
 
 
