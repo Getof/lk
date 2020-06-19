@@ -1393,3 +1393,80 @@ body {
         width: 100%;
     }
 }
+
+.tasks-title {
+    font-size: 22px;
+    /* identical to box height, or 31px */
+    color: #191919;
+    padding-bottom: 21px;
+}
+.tasks-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tasks-block, .tasks-block-add {
+    padding: 15px;
+    padding-top: 10px;
+    width: 420px;
+    margin-bottom: 30px;
+}
+.tasks-block__text-header__span-container {
+    padding-top: 10px;
+}
+.tasks-block__text-header__span {
+    font-size: 18px;
+}
+.tasks-block__text-header__span-id {
+    font-size: 14px;
+    line-height: 140%;
+    opacity: 0.6;
+    margin-left: 10px;
+}
+.tasks-block__desc-header {
+    font-weight: bold;
+}
+.tasks-block__desc, .tasks-block__desc-header {
+    font-size: 12px;
+    line-height: 160%;
+}
+.tasks-block__desc, .tasks-block__details {
+    font-size: 12px;
+    opacity: 0.4;
+}
+.tasks-block__details {
+    opacity: 1;
+}
+.tasks-block__line {
+    margin: 10px 0;
+}
+.tasks-block-add {
+    height: 176px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1.5px dashed #e3e3e3;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.tasks-block-add img {
+    margin-right: 10px;
+}
+@media screen and (max-width: 1170px) {
+    .tasks-title {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .courses-block, .course-block-add {
+        margin-bottom: 15px;
+    }
+    .tasks-block__text-header__span {
+        font-size: 16px;
+    }
+    .tasks-block__text-header__span-id {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+}
