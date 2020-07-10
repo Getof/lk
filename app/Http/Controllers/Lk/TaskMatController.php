@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Lk;
 use App\Http\Controllers\Controller;
 use App\TaskMat;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TaskMatController extends Controller
 {
@@ -15,7 +16,12 @@ class TaskMatController extends Controller
      */
     public function index()
     {
-        //
+        $id_t = Auth::id();
+        $tasks = TaskMat::where('teacher_id', '=', $id_t)->get();
+
+        return view('lk.custom.materials.task', [
+            'tasks' => $tasks
+        ]);
     }
 
     /**

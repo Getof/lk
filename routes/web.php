@@ -49,7 +49,7 @@ Route::group(['prefix'=>'lk', 'namespace'=>'Lk'], function(){
     Route::post('/teacher/material/links/add', 'LinkController@store')->name('teacher.link.add');
     Route::post('/teacher/material/links/edit', 'LinkController@update')->name('teacher.link.update');
 
-    Route::get('/teacher/material/tasks', 'TaskController@index')->name('teacher.task');
+    Route::get('/teacher/material/tasks', 'TaskMatController@index')->name('teacher.task');
 
 
 

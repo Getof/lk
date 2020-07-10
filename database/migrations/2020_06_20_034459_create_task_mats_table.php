@@ -15,7 +15,7 @@ class CreateTaskMatsTable extends Migration
     {
         Schema::create('task_mats', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_task');
+            $table->integer('teacher_id');
             $table->text('condition');
             $table->integer('id_file_condition');
             $table->text('decision');
