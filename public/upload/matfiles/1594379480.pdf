@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="ru-ru" dir="ltr"
+	  class='com_content view-article itemid-435 home j39 mm-hover'>
+<head><base href="http://simjew.ru/" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Super User" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Центральная Синагога Симферополя</title>
+	<link href="/templates/t3_bs3_blank/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/templates/t3_bs3_blank/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_k2/css/k2.css?v=2.8.0" rel="stylesheet" type="text/css" />
+	<link href="/templates/system/css/system.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/t3_bs3_blank/css/legacy-grid.css" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/t3/base-bs3/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/t3_bs3_blank/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/t3_bs3_blank/css/megamenu.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/t3_bs3_blank/css/off-canvas.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/t3_bs3_blank/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<script src="/media/k2/assets/js/k2.frontend.js?v=2.8.0&amp;sitepath=/" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.min.js?a6d3df1b92cca46ccf1746a3805fceaa" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?a6d3df1b92cca46ccf1746a3805fceaa" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?a6d3df1b92cca46ccf1746a3805fceaa" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js?a6d3df1b92cca46ccf1746a3805fceaa" type="text/javascript"></script>
+	<script src="/plugins/system/t3/base-bs3/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+	<script src="/plugins/system/t3/base-bs3/js/jquery.tap.min.js" type="text/javascript"></script>
+	<script src="/plugins/system/t3/base-bs3/js/off-canvas.js" type="text/javascript"></script>
+	<script src="/plugins/system/t3/base-bs3/js/script.js" type="text/javascript"></script>
+	<script src="/plugins/system/t3/base-bs3/js/menu.js" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<style type="text/stylesheet">
+		@-webkit-viewport   { width: device-width; }
+		@-moz-viewport      { width: device-width; }
+		@-ms-viewport       { width: device-width; }
+		@-o-viewport        { width: device-width; }
+		@viewport           { width: device-width; }
+	</style>
+	<script type="text/javascript">
+		//<![CDATA[
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement("style");
+			msViewportStyle.appendChild(
+				document.createTextNode("@-ms-viewport{width:auto!important}")
+			);
+			document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+		}
+		//]]>
+	</script>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="apple-mobile-web-app-capable" content="YES"/>
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script type="text/javascript" src="/plugins/system/t3/base-bs3/js/respond.min.js"></script>
+<![endif]-->
+<script>
+jQuery(window).on("scroll", function() {
+    if (jQuery(window).scrollTop() > 50) jQuery('.t3-header').addClass('mainpage');
+          else jQuery('.t3-header').removeClass('mainpage');
+    });
+</script>
+</head>
+<body>
+<div class="t3-wrapper"> <!-- Need this wrapper for off-canvas menu. Remove if you don't use of-canvas -->
+<header id="t3-header" class="t3-header"><div class="container-fluid"><div class="row">
+<div class="col-xs-4 col-lg-2 col-md-3 col-sm-4 logo">
+<div class="logo-image"><a href="http://simjew.ru/" title="Синагога">
+<img class="logo-img" src="/templates/t3_bs3_blank/images/logo.png" alt="Синагога" /><span>Синагога</span></a></div>
+
+<div class="blacklogo logo-image"><a href="http://simjew.ru/" title="Синагога">
+<img class="logo-img" src="/templates/t3_bs3_blank/images/logo-b.png" alt="Центральная синагога Симферополя" /></a></div>
+
+
+</div>
+<div class="hidden-xs col-lg-4 col-md-3 hidden-sm"></div>
+<div class="col-xs-8 col-lg-6 col-md-6 col-sm-8"><nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav">
+<div class="navbar-header">
+
+<button class="btn btn-primary off-canvas-toggle " type="button" data-pos="left" data-nav="#t3-off-canvas" data-effect="off-canvas-effect-1">
+  <i class="fa fa-bars"></i>
+</button>
+
+<!-- OFF-CANVAS SIDEBAR -->
+<div id="t3-off-canvas" class="t3-off-canvas ">
+
+
+ <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  <div class="t3-off-canvas-body">
+    <div class="t3-module module " id="Mod136"><div class="module-inner"><div class="module-ct"><ul class="nav menu">
+<li class="item-435 default current active"><a href="/" class="">Главная</a></li><li class="item-601 parent"><a href="/about" class="">О нас</a></li><li class="item-602"><a href="/events" class="">Анонсы</a></li><li class="item-604"><a href="/news" class="">Новости</a></li><li class="item-607 parent"><a href="/calendar" class="">Календарь</a></li><li class="item-615 parent"><a href="/service" class="">Практика Иудаизма</a></li><li class="item-606"><a href="/tsdaka" class="">Цдака</a></li><li class="item-614"><a href="/smi-about-us" class="">СМИ о нас</a></li><li class="item-617 parent"><a href="/our-media" class="">Галерея</a></li><li class="item-603"><a href="/contacts" class="">Контакты</a></li><li class="item-680"><a href="/forma" class="">Онлайн-форма обращения</a></li></ul>
+</div></div></div>
+  </div>
+
+</div>
+<!-- //OFF-CANVAS SIDEBAR -->
+
+</div>
+<div class="t3-navbar navbar-collapse collapse"><div  class="t3-megamenu animate slide"  data-duration="400" data-responsive="true">
+<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="nav navbar-nav level0">
+<li itemprop='name' class="active" data-id="608" data-level="1">
+<a itemprop='url' class=""  href="/"   data-target="#">Главная</a>
+
+</li>
+<li itemprop='name'  data-id="609" data-level="1">
+<a itemprop='url' class=""  href="/about"   data-target="#">О нас</a>
+
+</li>
+<li itemprop='name'  data-id="610" data-level="1">
+<a itemprop='url' class=""  href="/events"   data-target="#">Анонсы</a>
+
+</li>
+<li itemprop='name'  data-id="611" data-level="1">
+<a itemprop='url' class=""  href="/contacts"   data-target="#">Контакты</a>
+
+</li>
+</ul>
+</div>
+
+<a href="https://vk.com/simjew" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+<a href="https://www.facebook.com/SimJew" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+</div>
+
+</nav>
+<div>
+
+<div class="custom"  >
+	<p class="top-phone"><a href="tel:+7 (978) 577-0-777"><i class="fa fa-phone" aria-hidden="true"></i> +7 (978) 577-0-777</a></p>
+<p class="top-mail"><a href="mailto:simfjc@gmail.com">Написать нам</a></p></div>
+</div>
+</div>	
+</div></div>
+
+</header>
+
+<div class="container-fluid t3-sl t3-sl-1">	<!-- SPOTLIGHT -->
+	<div class="t3-spotlight t3-spotlight-1  row">
+					<div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="t3-module module " id="Mod128"><div class="module-inner"><div class="module-ct">
+
+<div class="custom"  >
+	<div class="video-bl"><video autoplay loop muted>
+       <source src="/images/2.mp4" type="video/mp4">
+       <source src="/images/2.webm" type="video/webm">
+       <source src="/images/2.ogv" type="video/ogg"/>
+    </video>
+<img src="/images/videoimg.jpg" alt="" class="fullwidth videoimg">
+    
+<div class="main-bl">
+<div class="cent-bl">
+
+<p><script charset="UTF-8" type="text/javascript" src="http://mkipnis.ru/srv/hebdate.php?lang=ru"></script> Г.</p>
+<p id="wb_data">Текущая дата</p>
+<div class="main-date">
+
+<p><b>Время посещения синагоги:</b><br/> с 08.00 до 17.00</p>
+<p><b>Утренние молитвы:</b><br/> Воскресенье - Пятница в 08.30</p>
+<p><b>Шаббат:</b><br/> Пятница в 19.00 и Суббота в 10.00</p></div>
+</div></div>
+</div>
+
+
+<script>
+obj_hours=document.getElementById("wb_data");
+name_month=new Array ("января", "февраля", "марта", "апреля", "мая", "июня",
+"июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+day=new Array("(Воскресенье)","(Понедельник)","(Вторник)",
+"(Среда)","(Четверг)","(Пятница)","(Суббота)");
+
+function wr_hours()
+{time=new Date;
+time_date=time.getDate();
+time_wr=((time_date<10)?'0':'')+time_date;
+time_wr=time_wr+" "+name_month[time.getMonth()]+" "+time.getFullYear()+" г."+" ";
+obj_hours.innerHTML=time_wr;}
+
+wr_hours();
+setInterval("wr_hours();",1000);
+</script>
+
+</div>
+</div></div></div>
+							</div>
+			</div>
+<!-- SPOTLIGHT -->
+</div>
+<div class="shadow-bl">
+
+<div id="t3-mainbody" class="container t3-mainbody"><div class="row">
+<div id="t3-content" class="t3-content col-xs-12"><div class="item-page" itemscope itemtype="https://schema.org/Article">
+<article itemscope itemtype="http://schema.org/Article">
+<meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://google.com/article"/>
+<meta itemprop="inLanguage" content="ru-RU" />
+<section class="article-content clearfix" itemprop="articleBody"></section>
+</article>
+	</div></div></div></div> 
+
+<div class="container t3-sl t3-sl-2">	<!-- SPOTLIGHT -->
+	<div class="t3-spotlight t3-spotlight-2  row">
+					<div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="t3-module module " id="Mod122"><div class="module-inner"><div class="module-ct">
+<div id="k2ModuleBox122" class="k2ItemsBlock">
+
+		<p class="modulePretext"><h2><a href="/news"><span>Новости</span></a></h2></p>
+	
+	  <ul>
+        <li class="even">
+
+      <!-- Plugins: BeforeDisplay -->
+      
+      <!-- K2 Plugins: K2BeforeDisplay -->
+      
+      
+     
+
+      
+      <!-- Plugins: AfterDisplayTitle -->
+      
+      <!-- K2 Plugins: K2AfterDisplayTitle -->
+      
+      <!-- Plugins: BeforeDisplayContent -->
+      
+      <!-- K2 Plugins: K2BeforeDisplayContent -->
+      
+            <div class="moduleItemIntrotext">
+	      	      <a class="moduleItemImage" href="/news/item/215-delegatsiya-iz-kryma-vo-glave-s-ravvinom-jekhezkelem-lazarom-prinyali-uchastie-v-vii-s-ezde-feor-kotoryj-sostoyalsya-v-moskve" title="Continue reading &quot;Делегация из Крыма во главе с раввином Йехезкелем Лазаром, приняли участие в VII съезде ФЕОР, который состоялся в Москве.&quot;">
+	      	<img src="/media/k2/items/cache/4fcf9d660236ddb62c8456017158615a_L.jpg" alt="Делегация из Крыма во главе с раввином Йехезкелем Лазаром, приняли участие в VII съезде ФЕОР, который состоялся в Москве." />
+	      </a>
+	      		  
+		      <h3><a class="moduleItemTitle" href="/news/item/215-delegatsiya-iz-kryma-vo-glave-s-ravvinom-jekhezkelem-lazarom-prinyali-uchastie-v-vii-s-ezde-feor-kotoryj-sostoyalsya-v-moskve">Делегация из Крыма во главе с раввином Йехезкелем Лазаром, приняли участие в VII съезде ФЕОР, который состоялся в Москве.</a></h3>
+      
+      	      	<p>Федерация еврейских общин России отмечает 20-летие. </p>      	      </div>
+      
+      
+      <div class="clr"></div>
+
+      
+      <div class="clr"></div>
+
+      <!-- Plugins: AfterDisplayContent -->
+      
+      <!-- K2 Plugins: K2AfterDisplayContent -->
+      
+            <p class="date"><span class="moduleItemDateCreated">Опубликовано: 31 января 2020</span></p>
+      
+      
+      
+      
+			
+			
+						<a class="moduleItemReadMore" href="/news/item/215-delegatsiya-iz-kryma-vo-glave-s-ravvinom-jekhezkelem-lazarom-prinyali-uchastie-v-vii-s-ezde-feor-kotoryj-sostoyalsya-v-moskve">
+				Читать далее..
+			</a>
+			
+      <!-- Plugins: AfterDisplay -->
+      
+      <!-- K2 Plugins: K2AfterDisplay -->
+      
+      <div class="clr"></div>
+    </li>
+        <li class="odd">
+
+      <!-- Plugins: BeforeDisplay -->
+      
+      <!-- K2 Plugins: K2BeforeDisplay -->
+      
+      
+     
+
+      
+      <!-- Plugins: AfterDisplayTitle -->
+      
+      <!-- K2 Plugins: K2AfterDisplayTitle -->
+      
+      <!-- Plugins: BeforeDisplayContent -->
+      
+      <!-- K2 Plugins: K2BeforeDisplayContent -->
+      
+            <div class="moduleItemIntrotext">
+	      	      <a class="moduleItemImage" href="/news/item/214-ravvin-jekhezkel-lazar-prinyal-uchastie-v-konferentsii-kholokost-pamyat-i-preduprezhdenie-kotoraya-sostoyalas-v-kfu-im-v-i-vernadskogo" title="Continue reading &quot;Раввин Йехезкель Лазар принял участие в КОНФЕРЕНЦИИ &laquo;ХОЛОКОСТ: ПАМЯТЬ И ПРЕДУПРЕЖДЕНИЕ&raquo;, КОТОРАЯ СОСТОЯЛАСЬ В КФУ ИМ. В.И. ВЕРНАДСКОГО&quot;">
+	      	<img src="/media/k2/items/cache/86e8e67edae9219d12d438efd5f5a939_L.jpg" alt="Раввин Йехезкель Лазар принял участие в КОНФЕРЕНЦИИ &laquo;ХОЛОКОСТ: ПАМЯТЬ И ПРЕДУПРЕЖДЕНИЕ&raquo;, КОТОРАЯ СОСТОЯЛАСЬ В КФУ ИМ. В.И. ВЕРНАДСКОГО" />
+	      </a>
+	      		  
+		      <h3><a class="moduleItemTitle" href="/news/item/214-ravvin-jekhezkel-lazar-prinyal-uchastie-v-konferentsii-kholokost-pamyat-i-preduprezhdenie-kotoraya-sostoyalas-v-kfu-im-v-i-vernadskogo">Раввин Йехезкель Лазар принял участие в КОНФЕРЕНЦИИ «ХОЛОКОСТ: ПАМЯТЬ И ПРЕДУПРЕЖДЕНИЕ», КОТОРАЯ СОСТОЯЛАСЬ В КФУ ИМ. В.И. ВЕРНАДСКОГО</a></h3>
+      
+      	      	<p>27 января в Крымском Федеральном университете им. В.И. Вернадского прошла ежегодная Мемориальная конференция «Холокост: память и предупреждение»,       	      </div>
+      
+      
+      <div class="clr"></div>
+
+      
+      <div class="clr"></div>
+
+      <!-- Plugins: AfterDisplayContent -->
+      
+      <!-- K2 Plugins: K2AfterDisplayContent -->
+      
+            <p class="date"><span class="moduleItemDateCreated">Опубликовано: 27 января 2020</span></p>
+      
+      
+      
+      
+			
+			
+						<a class="moduleItemReadMore" href="/news/item/214-ravvin-jekhezkel-lazar-prinyal-uchastie-v-konferentsii-kholokost-pamyat-i-preduprezhdenie-kotoraya-sostoyalas-v-kfu-im-v-i-vernadskogo">
+				Читать далее..
+			</a>
+			
+      <!-- Plugins: AfterDisplay -->
+      
+      <!-- K2 Plugins: K2AfterDisplay -->
+      
+      <div class="clr"></div>
+    </li>
+        <li class="even">
+
+      <!-- Plugins: BeforeDisplay -->
+      
+      <!-- K2 Plugins: K2BeforeDisplay -->
+      
+      
+     
+
+      
+      <!-- Plugins: AfterDisplayTitle -->
+      
+      <!-- K2 Plugins: K2AfterDisplayTitle -->
+      
+      <!-- Plugins: BeforeDisplayContent -->
+      
+      <!-- K2 Plugins: K2BeforeDisplayContent -->
+      
+            <div class="moduleItemIntrotext">
+	      	      <a class="moduleItemImage" href="/news/item/213-ravvin-jekhezkel-lazar-prinyal-uchastie-v-press-konferentsii-kholokost-pamyat-i-preduprezhdenie" title="Continue reading &quot;Раввин Йехезкель Лазар принял участие в ПРЕСС-КОНФЕРЕНЦИИ &laquo;ХОЛОКОСТ: ПАМЯТЬ И ПРЕДУПРЕЖДЕНИЕ&raquo;&quot;">
+	      	<img src="/media/k2/items/cache/c79015a227b446e15f181d145a9ed4a7_L.jpg" alt="Раввин Йехезкель Лазар принял участие в ПРЕСС-КОНФЕРЕНЦИИ &laquo;ХОЛОКОСТ: ПАМЯТЬ И ПРЕДУПРЕЖДЕНИЕ&raquo;" />
+	      </a>
+	      		  
+		      <h3><a class="moduleItemTitle" href="/news/item/213-ravvin-jekhezkel-lazar-prinyal-uchastie-v-press-konferentsii-kholokost-pamyat-i-preduprezhdenie">Раввин Йехезкель Лазар принял участие в ПРЕСС-КОНФЕРЕНЦИИ «ХОЛОКОСТ: ПАМЯТЬ И ПРЕДУПРЕЖДЕНИЕ»</a></h3>
+      
+      	      	<p>
+    Сегодня, 21 января, в пресс-центре МИА «Россия сегодня», в рамках «Недели
+    памяти жертв Холокоста», состоялась пресс-конференция.      	      </div>
+      
+      
+      <div class="clr"></div>
+
+      
+      <div class="clr"></div>
+
+      <!-- Plugins: AfterDisplayContent -->
+      
+      <!-- K2 Plugins: K2AfterDisplayContent -->
+      
+            <p class="date"><span class="moduleItemDateCreated">Опубликовано: 21 января 2020</span></p>
+      
+      
+      
+      
+			
+			
+						<a class="moduleItemReadMore" href="/news/item/213-ravvin-jekhezkel-lazar-prinyal-uchastie-v-press-konferentsii-kholokost-pamyat-i-preduprezhdenie">
+				Читать далее..
+			</a>
+			
+      <!-- Plugins: AfterDisplay -->
+      
+      <!-- K2 Plugins: K2AfterDisplay -->
+      
+      <div class="clr"></div>
+    </li>
+        <li class="odd">
+
+      <!-- Plugins: BeforeDisplay -->
+      
+      <!-- K2 Plugins: K2BeforeDisplay -->
+      
+      
+     
+
+      
+      <!-- Plugins: AfterDisplayTitle -->
+      
+      <!-- K2 Plugins: K2AfterDisplayTitle -->
+      
+      <!-- Plugins: BeforeDisplayContent -->
+      
+      <!-- K2 Plugins: K2BeforeDisplayContent -->
+      
+            <div class="moduleItemIntrotext">
+	      	      <a class="moduleItemImage" href="/news/item/212-ravvin-jekhezkel-lazar-provel-molitvu-v-tsentralnoj-sinagoge-simferopolya" title="Continue reading &quot;Раввин Йехезкель Лазар провел молитву в Центральной синагоге Симферополя.&quot;">
+	      	<img src="/media/k2/items/cache/2e2843e2ade511d88df42c8a44a73c77_L.jpg" alt="Раввин Йехезкель Лазар провел молитву в Центральной синагоге Симферополя." />
+	      </a>
+	      		  
+		      <h3><a class="moduleItemTitle" href="/news/item/212-ravvin-jekhezkel-lazar-provel-molitvu-v-tsentralnoj-sinagoge-simferopolya">Раввин Йехезкель Лазар провел молитву в Центральной синагоге Симферополя.</a></h3>
+      
+      	      	<p>Сегодня, 10 Тевета (07.01.2020г.) раввин Йехезкель Лазар провел молитву в Центральной синагоге Симферополя.</p>      	      </div>
+      
+      
+      <div class="clr"></div>
+
+      
+      <div class="clr"></div>
+
+      <!-- Plugins: AfterDisplayContent -->
+      
+      <!-- K2 Plugins: K2AfterDisplayContent -->
+      
+            <p class="date"><span class="moduleItemDateCreated">Опубликовано: 07 января 2020</span></p>
+      
+      
+      
+      
+			
+			
+						<a class="moduleItemReadMore" href="/news/item/212-ravvin-jekhezkel-lazar-provel-molitvu-v-tsentralnoj-sinagoge-simferopolya">
+				Читать далее..
+			</a>
+			
+      <!-- Plugins: AfterDisplay -->
+      
+      <!-- K2 Plugins: K2AfterDisplay -->
+      
+      <div class="clr"></div>
+    </li>
+        <li class="even">
+
+      <!-- Plugins: BeforeDisplay -->
+      
+      <!-- K2 Plugins: K2BeforeDisplay -->
+      
+      
+     
+
+      
+      <!-- Plugins: AfterDisplayTitle -->
+      
+      <!-- K2 Plugins: K2AfterDisplayTitle -->
+      
+      <!-- Plugins: BeforeDisplayContent -->
+      
+      <!-- K2 Plugins: K2BeforeDisplayContent -->
+      
+            <div class="moduleItemIntrotext">
+	      	      <a class="moduleItemImage" href="/news/item/211-evrejskie-imena-dlya-docherej-predsedatelya-evrejskoj-obshchiny-g-evpatorii" title="Continue reading &quot;Еврейские имена для дочерей Председателя еврейской общины г. Евпатории.&quot;">
+	      	<img src="/media/k2/items/cache/18cb4412b3fd96d4c2c15944894f7ea5_L.jpg" alt="Еврейские имена для дочерей Председателя еврейской общины г. Евпатории." />
+	      </a>
+	      		  
+		      <h3><a class="moduleItemTitle" href="/news/item/211-evrejskie-imena-dlya-docherej-predsedatelya-evrejskoj-obshchiny-g-evpatorii">Еврейские имена для дочерей Председателя еврейской общины г. Евпатории.</a></h3>
+      
+      	      	<p>Сегодня, 06.01.2020г. раввин Йехезкель Лазар в синагоге «Егия Капай» (г. Евпатория) дал еврейские имена дочерям Председателя еврейской общины г.Евпатории.</p>      	      </div>
+      
+      
+      <div class="clr"></div>
+
+      
+      <div class="clr"></div>
+
+      <!-- Plugins: AfterDisplayContent -->
+      
+      <!-- K2 Plugins: K2AfterDisplayContent -->
+      
+            <p class="date"><span class="moduleItemDateCreated">Опубликовано: 06 января 2020</span></p>
+      
+      
+      
+      
+			
+			
+						<a class="moduleItemReadMore" href="/news/item/211-evrejskie-imena-dlya-docherej-predsedatelya-evrejskoj-obshchiny-g-evpatorii">
+				Читать далее..
+			</a>
+			
+      <!-- Plugins: AfterDisplay -->
+      
+      <!-- K2 Plugins: K2AfterDisplay -->
+      
+      <div class="clr"></div>
+    </li>
+        <li class="odd lastItem">
+
+      <!-- Plugins: BeforeDisplay -->
+      
+      <!-- K2 Plugins: K2BeforeDisplay -->
+      
+      
+     
+
+      
+      <!-- Plugins: AfterDisplayTitle -->
+      
+      <!-- K2 Plugins: K2AfterDisplayTitle -->
+      
+      <!-- Plugins: BeforeDisplayContent -->
+      
+      <!-- K2 Plugins: K2BeforeDisplayContent -->
+      
+            <div class="moduleItemIntrotext">
+	      	      <a class="moduleItemImage" href="/news/item/210-khanuka-v-tsentralnoj-sinagoge-simferopolya" title="Continue reading &quot;Ханука в Центральной Синагоге Симферополя!&quot;">
+	      	<img src="/media/k2/items/cache/97d2860871f3d35e35f6eb0477d3015a_L.jpg" alt="Ханука в Центральной Синагоге Симферополя!" />
+	      </a>
+	      		  
+		      <h3><a class="moduleItemTitle" href="/news/item/210-khanuka-v-tsentralnoj-sinagoge-simferopolya">Ханука в Центральной Синагоге Симферополя!</a></h3>
+      
+      	      	Ханука в Центральной Синагоге Симферополя!      	      </div>
+      
+      
+      <div class="clr"></div>
+
+      
+      <div class="clr"></div>
+
+      <!-- Plugins: AfterDisplayContent -->
+      
+      <!-- K2 Plugins: K2AfterDisplayContent -->
+      
+            <p class="date"><span class="moduleItemDateCreated">Опубликовано: 29 декабря 2019</span></p>
+      
+      
+      
+      
+			
+			
+						<a class="moduleItemReadMore" href="/news/item/210-khanuka-v-tsentralnoj-sinagoge-simferopolya">
+				Читать далее..
+			</a>
+			
+      <!-- Plugins: AfterDisplay -->
+      
+      <!-- K2 Plugins: K2AfterDisplay -->
+      
+      <div class="clr"></div>
+    </li>
+        <li class="clearList"></li>
+  </ul>
+  
+		<p class="learnmore"><a class="moduleCustomLink" href="/news" title="Все новости">Все новости</a></p>
+	
+	
+</div>
+</div></div></div><div class="t3-module module " id="Mod132"><div class="module-inner"><div class="module-ct">
+<div id="k2ModuleBox132" class="k2ItemsBlock">
+
+		<p class="modulePretext"><h2><a href="/events"><span>Анонсы</span></a></h2></p>
+	
+	  <ul>
+        <li class="even">
+
+      <!-- Plugins: BeforeDisplay -->
+      
+      <!-- K2 Plugins: K2BeforeDisplay -->
+      
+      
+     
+
+      
+      <!-- Plugins: AfterDisplayTitle -->
+      
+      <!-- K2 Plugins: K2AfterDisplayTitle -->
+      
+      <!-- Plugins: BeforeDisplayContent -->
+      
+      <!-- K2 Plugins: K2BeforeDisplayContent -->
+      
+            <div class="moduleItemIntrotext">
+	      	      <a class="moduleItemImage" href="/purim-v-mestechke-prodazha-biletov" title="Continue reading &quot;Скоро откроется продажа билетов!&quot;">
+	      	<img src="/media/k2/items/cache/ca332973fc363da77aefed58534dcd5c_L.jpg" alt="Скоро откроется продажа билетов!" />
+	      </a>
+	      		  
+		      <h3><a class="moduleItemTitle" href="/purim-v-mestechke-prodazha-biletov">Скоро откроется продажа билетов!</a></h3>
+      
+      	      	<p>Пурим в местечке. Cимферополь 5780. 10 марта 2020 года 17.00</p>      	      </div>
+      
+      
+      <div class="clr"></div>
+
+      
+      <div class="clr"></div>
+
+      <!-- Plugins: AfterDisplayContent -->
+      
+      <!-- K2 Plugins: K2AfterDisplayContent -->
+      
+      
+      
+      
+      
+			
+			
+						<a class="moduleItemReadMore" href="/purim-v-mestechke-prodazha-biletov">
+				Читать далее..
+			</a>
+			
+      <!-- Plugins: AfterDisplay -->
+      
+      <!-- K2 Plugins: K2AfterDisplay -->
+      
+      <div class="clr"></div>
+    </li>
+        <li class="odd">
+
+      <!-- Plugins: BeforeDisplay -->
+      
+      <!-- K2 Plugins: K2BeforeDisplay -->
+      
+      
+     
+
+      
+      <!-- Plugins: AfterDisplayTitle -->
+      
+      <!-- K2 Plugins: K2AfterDisplayTitle -->
+      
+      <!-- Plugins: BeforeDisplayContent -->
+      
+      <!-- K2 Plugins: K2BeforeDisplayContent -->
+      
+            <div class="moduleItemIntrotext">
+	      	      <a class="moduleItemImage" href="/events/item/206-priglashaem-na-prazdnik-khanuka-v-simferopol" title="Continue reading &quot;Приглашаем на праздник Ханука в Симферополь!&quot;">
+	      	<img src="/media/k2/items/cache/1fc372946c0b98fb8d7f87d4c38ea83a_L.jpg" alt="Приглашаем на праздник Ханука в Симферополь!" />
+	      </a>
+	      		  
+		      <h3><a class="moduleItemTitle" href="/events/item/206-priglashaem-na-prazdnik-khanuka-v-simferopol">Приглашаем на праздник Ханука в Симферополь!</a></h3>
+      
+      	      	<p>Приглашаем на праздник Ханука в Симферополь!</p>      	      </div>
+      
+      
+      <div class="clr"></div>
+
+      
+      <div class="clr"></div>
+
+      <!-- Plugins: AfterDisplayContent -->
+      
+      <!-- K2 Plugins: K2AfterDisplayContent -->
+      
+      
+      
+      
+      
+			
+			
+						<a class="moduleItemReadMore" href="/events/item/206-priglashaem-na-prazdnik-khanuka-v-simferopol">
+				Читать далее..
+			</a>
+			
+      <!-- Plugins: AfterDisplay -->
+      
+      <!-- K2 Plugins: K2AfterDisplay -->
+      
+      <div class="clr"></div>
+    </li>
+        <li class="even">
+
+      <!-- Plugins: BeforeDisplay -->
+      
+      <!-- K2 Plugins: K2BeforeDisplay -->
+      
+      
+     
+
+      
+      <!-- Plugins: AfterDisplayTitle -->
+      
+      <!-- K2 Plugins: K2AfterDisplayTitle -->
+      
+      <!-- Plugins: BeforeDisplayContent -->
+      
+      <!-- K2 Plugins: K2BeforeDisplayContent -->
+      
+            <div class="moduleItemIntrotext">
+	      	      <a class="moduleItemImage" href="/events/item/205-22-dekabrya-2019-g-sostoitsya-evrejskij-prazdnik-khanuka" title="Continue reading &quot;22 декабря 2019 г. состоится Еврейский праздник Ханука&quot;">
+	      	<img src="/media/k2/items/cache/39ab3bf46ced9d4856c25205fb92582a_L.jpg" alt="22 декабря 2019 г. состоится Еврейский праздник Ханука" />
+	      </a>
+	      		  
+		      <h3><a class="moduleItemTitle" href="/events/item/205-22-dekabrya-2019-g-sostoitsya-evrejskij-prazdnik-khanuka">22 декабря 2019 г. состоится Еврейский праздник Ханука</a></h3>
+      
+      	      	<p>В сквере Республики г. Симферополя на пересечении улиц К.Маркса и ул. Серова</p>      	      </div>
+      
+      
+      <div class="clr"></div>
+
+      
+      <div class="clr"></div>
+
+      <!-- Plugins: AfterDisplayContent -->
+      
+      <!-- K2 Plugins: K2AfterDisplayContent -->
+      
+      
+      
+      
+      
+			
+			
+						<a class="moduleItemReadMore" href="/events/item/205-22-dekabrya-2019-g-sostoitsya-evrejskij-prazdnik-khanuka">
+				Читать далее..
+			</a>
+			
+      <!-- Plugins: AfterDisplay -->
+      
+      <!-- K2 Plugins: K2AfterDisplay -->
+      
+      <div class="clr"></div>
+    </li>
+        <li class="odd lastItem">
+
+      <!-- Plugins: BeforeDisplay -->
+      
+      <!-- K2 Plugins: K2BeforeDisplay -->
+      
+      
+     
+
+      
+      <!-- Plugins: AfterDisplayTitle -->
+      
+      <!-- K2 Plugins: K2AfterDisplayTitle -->
+      
+      <!-- Plugins: BeforeDisplayContent -->
+      
+      <!-- K2 Plugins: K2BeforeDisplayContent -->
+      
+            <div class="moduleItemIntrotext">
+	      	      <a class="moduleItemImage" href="/events/item/198-zakrytyj-pokaz-filma-klyatva" title="Continue reading &quot;Закрытый показ фильма &quot;Клятва&quot;&quot;">
+	      	<img src="/media/k2/items/cache/052250dc50138371fd04f19c188f0143_L.jpg" alt="Закрытый показ фильма &quot;Клятва&quot;" />
+	      </a>
+	      		  
+		      <h3><a class="moduleItemTitle" href="/events/item/198-zakrytyj-pokaz-filma-klyatva">Закрытый показ фильма "Клятва"</a></h3>
+      
+      	      	<p>10 ноября (воскресенье) в 17:30, приглашаем в синагогу на закрытый показ фильма "Клятва".</p>      	      </div>
+      
+      
+      <div class="clr"></div>
+
+      
+      <div class="clr"></div>
+
+      <!-- Plugins: AfterDisplayContent -->
+      
+      <!-- K2 Plugins: K2AfterDisplayContent -->
+      
+      
+      
+      
+      
+			
+			
+						<a class="moduleItemReadMore" href="/events/item/198-zakrytyj-pokaz-filma-klyatva">
+				Читать далее..
+			</a>
+			
+      <!-- Plugins: AfterDisplay -->
+      
+      <!-- K2 Plugins: K2AfterDisplay -->
+      
+      <div class="clr"></div>
+    </li>
+        <li class="clearList"></li>
+  </ul>
+  
+		<p class="learnmore"><a class="moduleCustomLink" href="/events" title="Все анонсы">Все анонсы</a></p>
+	
+	
+</div>
+</div></div></div>
+							</div>
+			</div>
+<!-- SPOTLIGHT -->
+</div>
+
+
+<footer id="t3-footer" class="wrap t3-footer">
+<div class="container">	<!-- SPOTLIGHT -->
+	<div class="t3-spotlight t3-footnav  row">
+					<div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="t3-module module " id="Mod131"><div class="module-inner"><div class="module-ct">
+
+<div class="custom"  >
+	<div class="foot-links">
+<a href="/">Главная</a> | 
+<a href="/about">О нас</a> | 
+<a href="/smi-about-us">СМИ о нас</a> | 
+<a href="/events">Анонсы</a> | 
+<a href="/service">Услуги</a> | 
+<a href="/news">Новости</a> | 
+<a href="/calendar">Календарь</a> | 
+<a href="/raspisanie-molitv">Расписание</a> | 
+<a href="/tsdaka">Цдака</a> | 
+<a href="/contacts">Контакты</a></div>
+<div class="social"><h4>Следите за нами в социальных сетях</h4>
+<p><a href="https://vk.com/simjew" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a> <a href="https://www.facebook.com/SimJew" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
+</div></div>
+</div></div></div>
+							</div>
+			</div>
+<!-- SPOTLIGHT -->
+</div><div class="t3-copyright"><div class="container"><div class="row">
+<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12"><p>2020. МРООИ "Еврейская Религиозная Община г. Симферополя"</p></div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><p class="copy"><a href="http://bovykina.ru/" target="_blank">Создание сайта - Анастасия Бовыкина</a></p></div></div></div></div>
+</footer>
+</div>
+</div>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46474692 = new Ya.Metrika({
+                    id:46474692,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46474692" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

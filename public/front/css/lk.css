@@ -1507,21 +1507,121 @@ body {
     color: #191919;
 }
 
-.materials-modal-file {
-    display: flex;
-    cursor: pointer;
-    justify-content: center;
+.modal-materials-field {
+    background: #F9F9F9;
+    border: 1px solid rgba(25, 25, 25, 0.03);
+    box-sizing: border-box;
+    border-radius: 5px;
     align-items: center;
+    height: 62px;
+    padding: 14px;
+}
+.modal-materials-field .materials-container {
+    overflow-y: auto;
+}
+.modal-materials-field .add {
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    justify-content: space-around;
+    background: #ededed;
+    border-radius: 5px;
+}
+.modal-materials-field .add img {
+    opacity: 0.5;
+}
+.modal-materials-field .material {
+    background: black;
+    border-radius: 3px;
+    color: white;
+    padding: 8px 12px;
+    margin-right: 14px;
+    font-weight: 600;
+}
+.modal-materials-field .material img {
+    width: 20px;
+    margin-right: 11px;
+}
+.modal-materials-field .remove {
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+@media screen and (max-width: 1170px) {
+    .materials-container {
+        width: 80%;
+    }
 }
 
-.materials-modal-file img {
-    width: 24px;
-    height: 22px;
+#material-modal-search {
+    width: 80%;
 }
-
-.materials-modal-file span {
-    margin-left: 15px;
-    font-weight: normal;
+.material-modal__search {
+    width: 100%;
+    border-radius: 0;
+    height: 46px;
+    padding: 10px 15%;
+    margin-bottom: 5px;
+}
+.material-modal__search input {
+    border: 0;
+    background: transparent;
+}
+.material-modal__items {
+    width: 100%;
+    border-radius: 0;
+    height: 330px;
+    padding: 15px 15%;
+    overflow-y: auto;
+}
+.material-modal__items .block {
+    width: 370px;
+    height: 78px;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+.material-modal__items .block .item-type {
+    margin-right: 14px;
+}
+.material-modal__items .block .heading {
     font-size: 16px;
+}
+.material-modal__items .block .tags {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    /* or 19px */
+    color: #191919;
+    opacity: 0.4;
+}
+.material-modal__items .block .tags span {
+    padding: 0 3px;
+}
+.material-modal__items .block .control {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: auto;
+    justify-content: space-around;
+    background: #F9F9F9;
+    border-radius: 10px;
+}
+.material-modal__header {
+    padding: 40px 0;
+}
+.material-modal-bottom {
+    padding: 30px 0;
+}
+@media screen and (max-width: 1170px) {
+    .material-modal__items {
+        padding: 15px 5%;
+    }
+    .material-modal__items .block {
+        width: 100%;
+    }
 }
 
